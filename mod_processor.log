@@ -1,0 +1,320 @@
+2024-07-29 00:58:11,715 - WARNING - Invalid version '15.2.3-forge' for mod 'ae2wtlib' in F:\PythonTestbench\jars\ae2wtlib.jar, using '0.0.0'
+2024-07-29 00:58:11,716 - WARNING - Invalid version '1.20.1-1.0.1-neoforge' for mod 'aeroblender' in F:\PythonTestbench\jars\aeroblender.jar, using '0.0.0'
+2024-07-29 00:58:11,769 - WARNING - Invalid version '1.20.1-1.4.2-neoforge' for mod 'aether' in F:\PythonTestbench\jars\aether.jar, using '0.0.0'
+2024-07-29 00:58:11,784 - WARNING - Invalid version '1.1.2-1.20.1' for mod 'aetheric_tetranomicon' in F:\PythonTestbench\jars\aetheric_tetranomicon.jar, using '0.0.0'
+2024-07-29 00:58:11,844 - WARNING - Invalid version '1.20-1.2.8' for mod 'amendments' in F:\PythonTestbench\jars\amendments.jar, using '0.0.0'
+2024-07-29 00:58:11,918 - WARNING - Invalid version '1.20.1-5.2.2' for mod 'bagus_lib' in F:\PythonTestbench\jars\bagus_lib-1.20.1-5.2.2.jar, using '0.0.0'
+2024-07-29 00:58:11,925 - WARNING - Invalid version '0.4.3-1.20.x' for mod 'bellsandwhistles' in F:\PythonTestbench\jars\bellsandwhistles.jar, using '0.0.0'
+2024-07-29 00:58:11,951 - WARNING - Invalid version '0.1.7-mc1.20.1' for mod 'bocchud' in F:\PythonTestbench\jars\BoccHUD-0.1.7-mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:11,983 - WARNING - Invalid version '1.20.1-445-FORGE' for mod 'botania' in F:\PythonTestbench\jars\Botania-1.20.1-445-FORGE.jar, using '0.0.0'
+2024-07-29 00:58:12,024 - WARNING - Invalid version '1.20.1-444-FORGE' for mod 'botania' in F:\PythonTestbench\jars\botania.jar, using '0.0.0'
+2024-07-29 00:58:12,032 - WARNING - Invalid version '1.20.1-2.0' for mod 'brewinandchewin' in F:\PythonTestbench\jars\brewinandchewin.jar, using '0.0.0'
+2024-07-29 00:58:12,037 - WARNING - Invalid version '0.2.0-c3me-alpha.11.52-dirty' for mod 'c3me' in F:\PythonTestbench\jars\c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61.jar, using '0.0.0'
+2024-07-29 00:58:12,039 - WARNING - Invalid version '1.2.0-SNAPSHOT' for mod 'caramelchat' in F:\PythonTestbench\jars\caramelChat-mc1.20.1-forge-1.2.0-SNAPSHOT.jar, using '0.0.0'
+2024-07-29 00:58:12,040 - WARNING - Invalid version '1.20.1-0.4n' for mod 'casualness_delight' in F:\PythonTestbench\jars\casualness_delight.jar, using '0.0.0'
+2024-07-29 00:58:12,043 - WARNING - Invalid version '1.0.3-forge-1.20.1' for mod 'chefsdelight' in F:\PythonTestbench\jars\chefsdelight.jar, using '0.0.0'
+2024-07-29 00:58:12,062 - WARNING - Invalid version '1.0.4-1.20.1' for mod 'corn_delight' in F:\PythonTestbench\jars\corn_delight.jar, using '0.0.0'
+2024-07-29 00:58:12,063 - WARNING - Invalid version '1.20.1-v1a' for mod 'cosmeticarmorreworked' in F:\PythonTestbench\jars\cosmeticarmorreworked.jar, using '0.0.0'
+2024-07-29 00:58:12,103 - WARNING - Invalid version '0.5.1.f' for mod 'create' in F:\PythonTestbench\jars\create.jar, using '0.0.0'
+2024-07-29 00:58:12,116 - WARNING - Invalid version '1.20.1-1.2.4d' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition-1.20.1-1.2.4d.jar, using '0.0.0'
+2024-07-29 00:58:12,120 - WARNING - Invalid version '1.20.1-1.2.4c' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition.jar, using '0.0.0'
+2024-07-29 00:58:12,133 - WARNING - Invalid version '0.5.4-nightly-8b9cea6' for mod 'createbigcannons' in F:\PythonTestbench\jars\createbigcannons.jar, using '0.0.0'
+2024-07-29 00:58:12,147 - WARNING - Invalid version '2.0.2-1.20.1-forge' for mod 'createdeco' in F:\PythonTestbench\jars\createdeco.jar, using '0.0.0'
+2024-07-29 00:58:12,150 - WARNING - Invalid version '2.0.7-1.20.1' for mod 'createendertransmission' in F:\PythonTestbench\jars\createendertransmission.jar, using '0.0.0'
+2024-07-29 00:58:12,150 - WARNING - Invalid version '2.1.1-1.20.1' for mod 'createliquidfuel' in F:\PythonTestbench\jars\createliquidfuel.jar, using '0.0.0'
+2024-07-29 00:58:12,164 - WARNING - Invalid version '0.8.2-mc1.20.1' for mod 'create_connected' in F:\PythonTestbench\jars\create_connected.jar, using '0.0.0'
+2024-07-29 00:58:12,169 - WARNING - Invalid version '1.2.9.d' for mod 'create_enchantment_industry' in F:\PythonTestbench\jars\create_enchantment_industry.jar, using '0.0.0'
+2024-07-29 00:58:12,173 - WARNING - Invalid version '1.5.0-mc1.20.1' for mod 'create_power_loader' in F:\PythonTestbench\jars\create_power_loader.jar, using '0.0.0'
+2024-07-29 00:58:12,174 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'create_tweaked_controllers' in F:\PythonTestbench\jars\create_tweaked_controllers.jar, using '0.0.0'
+2024-07-29 00:58:12,205 - WARNING - Invalid version '1.20.1-1.0.4' for mod 'deep_aether' in F:\PythonTestbench\jars\deep_aether.jar, using '0.0.0'
+2024-07-29 00:58:12,237 - WARNING - Invalid version '1.20-1.8.17b' for mod 'dummmmmmy' in F:\PythonTestbench\jars\dummmmmmy.jar, using '0.0.0'
+2024-07-29 00:58:12,240 - WARNING - Invalid version '2.1.58-1.20.x' for mod 'dungeons_arise' in F:\PythonTestbench\jars\dungeons_arise.jar, using '0.0.0'
+2024-07-29 00:58:12,251 - WARNING - Invalid version '1.1.10+1.20.1+forge' for mod 'emi' in F:\PythonTestbench\jars\emi-1.1.10+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 00:58:12,253 - WARNING - Invalid version '0.6.6+fix3+1.20.1+forge' for mod 'emi_loot' in F:\PythonTestbench\jars\emi_loot-0.6.6+fix3+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 00:58:12,261 - WARNING - Invalid version '0.3.4-forge' for mod 'euphoria_patcher' in F:\PythonTestbench\jars\EuphoriaPatcher-0.3.4-forge.jar, using '0.0.0'
+2024-07-29 00:58:12,261 - WARNING - Invalid version '0.92.2+1.11.8+1.20.1' for mod 'fabric_api' in F:\PythonTestbench\jars\fabric-api-0.92.2+1.11.8+1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:12,268 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'farmersdelight' in F:\PythonTestbench\jars\farmersdelight.jar, using '0.0.0'
+2024-07-29 00:58:12,272 - WARNING - Invalid version '0.1.5-mc1.20.1' for mod 'forgematica' in F:\PythonTestbench\jars\Forgematica-0.1.5-mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:12,316 - WARNING - Invalid version '1.20-1.1.2' for mod 'jepp' in F:\PythonTestbench\jars\jepp-1.20-1.1.2.jar, using '0.0.0'
+2024-07-29 00:58:12,331 - WARNING - Invalid version '1.20.1-0.6.1' for mod 'locusazzurro_icaruswings' in F:\PythonTestbench\jars\locusazzurro_icaruswings.jar, using '0.0.0'
+2024-07-29 00:58:12,377 - WARNING - Invalid version '0.1.11-mc1.20.1' for mod 'mafglib' in F:\PythonTestbench\jars\MaFgLib-0.1.11-mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:12,435 - WARNING - Invalid version '1.20.1-1.2.3' for mod 'miners_delight' in F:\PythonTestbench\jars\miners_delight.jar, using '0.0.0'
+2024-07-29 00:58:12,436 - WARNING - Invalid version '0.2.1-mc1.20.1-forge' for mod 'minihudextra' in F:\PythonTestbench\jars\MiniHUD-Extra-0.2.1-mc1.20.1-forge.jar, using '0.0.0'
+2024-07-29 00:58:12,462 - WARNING - Invalid version '1.20-2.12.9' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight-1.20-2.12.9-forge.jar, using '0.0.0'
+2024-07-29 00:58:12,464 - WARNING - Invalid version '1.20-2.12.6' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight.jar, using '0.0.0'
+2024-07-29 00:58:12,466 - WARNING - Invalid version '1.4.7-1.20.1' for mod 'mysterious_mountain_lib' in F:\PythonTestbench\jars\mysterious_mountain_lib.jar, using '0.0.0'
+2024-07-29 00:58:12,466 - WARNING - Invalid version '1.20.1-1.11.2-forge' for mod 'naturescompass' in F:\PythonTestbench\jars\naturescompass.jar, using '0.0.0'
+2024-07-29 00:58:12,468 - WARNING - Invalid version '1.20.1-4.0' for mod 'nethersdelight' in F:\PythonTestbench\jars\nethersdelight.jar, using '0.0.0'
+2024-07-29 00:58:12,470 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 00:58:12,471 - WARNING - Invalid version '1.20.1-v2.2.2' for mod 'nochatreports' in F:\PythonTestbench\jars\NoChatReports-FORGE-1.20.1-v2.2.2.jar, using '0.0.0'
+2024-07-29 00:58:12,475 - WARNING - Invalid version '1.0.2-1.20' for mod 'oceansdelight' in F:\PythonTestbench\jars\oceansdelight.jar, using '0.0.0'
+2024-07-29 00:58:12,475 - WARNING - Invalid version '1.20.1-0.2.5' for mod 'irisflw' in F:\PythonTestbench\jars\oculus-flywheel-compat-1.20.1-0.2.5.jar, using '0.0.0'
+2024-07-29 00:58:12,481 - WARNING - Invalid version '1.20.1-84-FORGE' for mod 'patchouli' in F:\PythonTestbench\jars\patchouli.jar, using '0.0.0'
+2024-07-29 00:58:12,564 - WARNING - Invalid version '2000.0.3-build.143' for mod 'polylib' in F:\PythonTestbench\jars\polylib.jar, using '0.0.0'
+2024-07-29 00:58:12,671 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'rocknroller' in F:\PythonTestbench\jars\RocknRoller-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:12,675 - WARNING - Invalid version '1.20.1-4.2.1' for mod 'shouldersurfing' in F:\PythonTestbench\jars\ShoulderSurfing-Forge-1.20.1-4.2.1.jar, using '0.0.0'
+2024-07-29 00:58:12,676 - WARNING - Invalid version '1.20.1-1.0.0' for mod 'silentsdelight' in F:\PythonTestbench\jars\silentsdelight.jar, using '0.0.0'
+2024-07-29 00:58:12,713 - WARNING - Invalid version '1.20-2.8.17' for mod 'supplementaries' in F:\PythonTestbench\jars\supplementaries.jar, using '0.0.0'
+2024-07-29 00:58:12,749 - WARNING - Invalid version '1.0.1-hotfix' for mod 'tacz' in F:\PythonTestbench\jars\tacz.jar, using '0.0.0'
+2024-07-29 00:58:12,777 - WARNING - Invalid version '0.1.4-1.20.1' for mod 'tetraextras' in F:\PythonTestbench\jars\tetraextras.jar, using '0.0.0'
+2024-07-29 00:58:12,779 - WARNING - Invalid version '1.19.2-0.0.2' for mod 'tetra_nihilo' in F:\PythonTestbench\jars\tetra_nihilo.jar, using '0.0.0'
+2024-07-29 00:58:12,874 - WARNING - Invalid version '1.20.1-5.12.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\tofucraft.jar, using '0.0.0'
+2024-07-29 00:58:12,898 - WARNING - Invalid version '1.20.1-5.13.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\TofuCraftReload-1.20.1-5.13.2.0.jar, using '0.0.0'
+2024-07-29 00:58:12,904 - WARNING - Invalid version '1.20.1-3.0.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight-1.20.1-3.0.0.jar, using '0.0.0'
+2024-07-29 00:58:12,906 - WARNING - Invalid version '1.20.1-2.5.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight.jar, using '0.0.0'
+2024-07-29 00:58:12,910 - WARNING - Invalid version '1.0-1.20.1' for mod 'toolbooster' in F:\PythonTestbench\jars\toolbooster.jar, using '0.0.0'
+2024-07-29 00:58:12,932 - WARNING - Invalid version '1.1.10-hotfix' for mod 'touhou_little_maid' in F:\PythonTestbench\jars\touhou_little_maid.jar, using '0.0.0'
+2024-07-29 00:58:12,947 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'tweakerge' in F:\PythonTestbench\jars\Tweakerge-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:13,035 - WARNING - Invalid version '1.4.0-1.20.1' for mod 'undergardenpatch' in F:\PythonTestbench\jars\undergardenpatch.jar, using '0.0.0'
+2024-07-29 00:58:13,045 - WARNING - Invalid version '1.20.1-2.5.19' for mod 'voicechat' in F:\PythonTestbench\jars\voicechat-forge-1.20.1-2.5.19.jar, using '0.0.0'
+2024-07-29 00:58:13,060 - WARNING - Invalid version '2.3.1-build.6+mc1.20.1' for mod 'yeetusexperimentus' in F:\PythonTestbench\jars\YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar, using '0.0.0'
+2024-07-29 00:58:13,106 - INFO - Missing mods.toml files: ['ae2-emi-crafting-1.3.1.jar', 'Connector-1.0.0-beta.44+1.20.1.jar', 'I18nUpdateMod-3.5.5-all.jar', 'kotlinforforge-4.11.0-all.jar']
+2024-07-29 01:01:24,832 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:01:24,833 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:01:24,833 - WARNING - Invalid version '15.2.3-forge' for mod 'ae2wtlib' in F:\PythonTestbench\jars\ae2wtlib.jar, using '0.0.0'
+2024-07-29 01:01:24,834 - WARNING - Invalid version '1.20.1-1.0.1-neoforge' for mod 'aeroblender' in F:\PythonTestbench\jars\aeroblender.jar, using '0.0.0'
+2024-07-29 01:01:24,888 - WARNING - Invalid version '1.20.1-1.4.2-neoforge' for mod 'aether' in F:\PythonTestbench\jars\aether.jar, using '0.0.0'
+2024-07-29 01:01:24,903 - WARNING - Invalid version '1.1.2-1.20.1' for mod 'aetheric_tetranomicon' in F:\PythonTestbench\jars\aetheric_tetranomicon.jar, using '0.0.0'
+2024-07-29 01:01:24,964 - WARNING - Invalid version '1.20-1.2.8' for mod 'amendments' in F:\PythonTestbench\jars\amendments.jar, using '0.0.0'
+2024-07-29 01:01:25,041 - WARNING - Invalid version '1.20.1-5.2.2' for mod 'bagus_lib' in F:\PythonTestbench\jars\bagus_lib-1.20.1-5.2.2.jar, using '0.0.0'
+2024-07-29 01:01:25,049 - WARNING - Invalid version '0.4.3-1.20.x' for mod 'bellsandwhistles' in F:\PythonTestbench\jars\bellsandwhistles.jar, using '0.0.0'
+2024-07-29 01:01:25,077 - WARNING - Invalid version '0.1.7-mc1.20.1' for mod 'bocchud' in F:\PythonTestbench\jars\BoccHUD-0.1.7-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:25,111 - WARNING - Invalid version '1.20.1-445-FORGE' for mod 'botania' in F:\PythonTestbench\jars\Botania-1.20.1-445-FORGE.jar, using '0.0.0'
+2024-07-29 01:01:25,152 - WARNING - Invalid version '1.20.1-444-FORGE' for mod 'botania' in F:\PythonTestbench\jars\botania.jar, using '0.0.0'
+2024-07-29 01:01:25,161 - WARNING - Invalid version '1.20.1-2.0' for mod 'brewinandchewin' in F:\PythonTestbench\jars\brewinandchewin.jar, using '0.0.0'
+2024-07-29 01:01:25,166 - WARNING - Invalid version '0.2.0-c3me-alpha.11.52-dirty' for mod 'c3me' in F:\PythonTestbench\jars\c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61.jar, using '0.0.0'
+2024-07-29 01:01:25,169 - WARNING - Invalid version '1.2.0-SNAPSHOT' for mod 'caramelchat' in F:\PythonTestbench\jars\caramelChat-mc1.20.1-forge-1.2.0-SNAPSHOT.jar, using '0.0.0'
+2024-07-29 01:01:25,170 - WARNING - Invalid version '1.20.1-0.4n' for mod 'casualness_delight' in F:\PythonTestbench\jars\casualness_delight.jar, using '0.0.0'
+2024-07-29 01:01:25,174 - WARNING - Invalid version '1.0.3-forge-1.20.1' for mod 'chefsdelight' in F:\PythonTestbench\jars\chefsdelight.jar, using '0.0.0'
+2024-07-29 01:01:25,193 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:01:25,194 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:01:25,197 - WARNING - Invalid version '1.0.4-1.20.1' for mod 'corn_delight' in F:\PythonTestbench\jars\corn_delight.jar, using '0.0.0'
+2024-07-29 01:01:25,197 - WARNING - Invalid version '1.20.1-v1a' for mod 'cosmeticarmorreworked' in F:\PythonTestbench\jars\cosmeticarmorreworked.jar, using '0.0.0'
+2024-07-29 01:01:25,239 - WARNING - Invalid version '0.5.1.f' for mod 'create' in F:\PythonTestbench\jars\create.jar, using '0.0.0'
+2024-07-29 01:01:25,251 - WARNING - Invalid version '1.20.1-1.2.4d' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition-1.20.1-1.2.4d.jar, using '0.0.0'
+2024-07-29 01:01:25,256 - WARNING - Invalid version '1.20.1-1.2.4c' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition.jar, using '0.0.0'
+2024-07-29 01:01:25,270 - WARNING - Invalid version '0.5.4-nightly-8b9cea6' for mod 'createbigcannons' in F:\PythonTestbench\jars\createbigcannons.jar, using '0.0.0'
+2024-07-29 01:01:25,284 - WARNING - Invalid version '2.0.2-1.20.1-forge' for mod 'createdeco' in F:\PythonTestbench\jars\createdeco.jar, using '0.0.0'
+2024-07-29 01:01:25,287 - WARNING - Invalid version '2.0.7-1.20.1' for mod 'createendertransmission' in F:\PythonTestbench\jars\createendertransmission.jar, using '0.0.0'
+2024-07-29 01:01:25,287 - WARNING - Invalid version '2.1.1-1.20.1' for mod 'createliquidfuel' in F:\PythonTestbench\jars\createliquidfuel.jar, using '0.0.0'
+2024-07-29 01:01:25,300 - WARNING - Invalid version '0.8.2-mc1.20.1' for mod 'create_connected' in F:\PythonTestbench\jars\create_connected.jar, using '0.0.0'
+2024-07-29 01:01:25,306 - WARNING - Invalid version '1.2.9.d' for mod 'create_enchantment_industry' in F:\PythonTestbench\jars\create_enchantment_industry.jar, using '0.0.0'
+2024-07-29 01:01:25,310 - WARNING - Invalid version '1.5.0-mc1.20.1' for mod 'create_power_loader' in F:\PythonTestbench\jars\create_power_loader.jar, using '0.0.0'
+2024-07-29 01:01:25,310 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'create_tweaked_controllers' in F:\PythonTestbench\jars\create_tweaked_controllers.jar, using '0.0.0'
+2024-07-29 01:01:25,346 - WARNING - Invalid version '1.20.1-1.0.4' for mod 'deep_aether' in F:\PythonTestbench\jars\deep_aether.jar, using '0.0.0'
+2024-07-29 01:01:25,381 - WARNING - Invalid version '1.20-1.8.17b' for mod 'dummmmmmy' in F:\PythonTestbench\jars\dummmmmmy.jar, using '0.0.0'
+2024-07-29 01:01:25,384 - WARNING - Invalid version '2.1.58-1.20.x' for mod 'dungeons_arise' in F:\PythonTestbench\jars\dungeons_arise.jar, using '0.0.0'
+2024-07-29 01:01:25,397 - WARNING - Invalid version '1.1.10+1.20.1+forge' for mod 'emi' in F:\PythonTestbench\jars\emi-1.1.10+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 01:01:25,401 - WARNING - Invalid version '0.6.6+fix3+1.20.1+forge' for mod 'emi_loot' in F:\PythonTestbench\jars\emi_loot-0.6.6+fix3+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 01:01:25,409 - WARNING - Invalid version '0.3.4-forge' for mod 'euphoria_patcher' in F:\PythonTestbench\jars\EuphoriaPatcher-0.3.4-forge.jar, using '0.0.0'
+2024-07-29 01:01:25,410 - WARNING - Invalid version '0.92.2+1.11.8+1.20.1' for mod 'fabric_api' in F:\PythonTestbench\jars\fabric-api-0.92.2+1.11.8+1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:25,417 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'farmersdelight' in F:\PythonTestbench\jars\farmersdelight.jar, using '0.0.0'
+2024-07-29 01:01:25,423 - WARNING - Invalid version '0.1.5-mc1.20.1' for mod 'forgematica' in F:\PythonTestbench\jars\Forgematica-0.1.5-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:25,450 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:01:25,450 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:01:25,472 - WARNING - Invalid version '1.20-1.1.2' for mod 'jepp' in F:\PythonTestbench\jars\jepp-1.20-1.1.2.jar, using '0.0.0'
+2024-07-29 01:01:25,482 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:01:25,483 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:01:25,488 - WARNING - Invalid version '1.20.1-0.6.1' for mod 'locusazzurro_icaruswings' in F:\PythonTestbench\jars\locusazzurro_icaruswings.jar, using '0.0.0'
+2024-07-29 01:01:25,535 - WARNING - Invalid version '0.1.11-mc1.20.1' for mod 'mafglib' in F:\PythonTestbench\jars\MaFgLib-0.1.11-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:25,596 - WARNING - Invalid version '1.20.1-1.2.3' for mod 'miners_delight' in F:\PythonTestbench\jars\miners_delight.jar, using '0.0.0'
+2024-07-29 01:01:25,597 - WARNING - Invalid version '0.2.1-mc1.20.1-forge' for mod 'minihudextra' in F:\PythonTestbench\jars\MiniHUD-Extra-0.2.1-mc1.20.1-forge.jar, using '0.0.0'
+2024-07-29 01:01:25,625 - WARNING - Invalid version '1.20-2.12.9' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight-1.20-2.12.9-forge.jar, using '0.0.0'
+2024-07-29 01:01:25,627 - WARNING - Invalid version '1.20-2.12.6' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight.jar, using '0.0.0'
+2024-07-29 01:01:25,630 - WARNING - Invalid version '1.4.7-1.20.1' for mod 'mysterious_mountain_lib' in F:\PythonTestbench\jars\mysterious_mountain_lib.jar, using '0.0.0'
+2024-07-29 01:01:25,631 - WARNING - Invalid version '1.20.1-1.11.2-forge' for mod 'naturescompass' in F:\PythonTestbench\jars\naturescompass.jar, using '0.0.0'
+2024-07-29 01:01:25,633 - WARNING - Invalid version '1.20.1-4.0' for mod 'nethersdelight' in F:\PythonTestbench\jars\nethersdelight.jar, using '0.0.0'
+2024-07-29 01:01:25,635 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:01:25,636 - WARNING - Invalid version '1.20.1-v2.2.2' for mod 'nochatreports' in F:\PythonTestbench\jars\NoChatReports-FORGE-1.20.1-v2.2.2.jar, using '0.0.0'
+2024-07-29 01:01:25,641 - WARNING - Invalid version '1.0.2-1.20' for mod 'oceansdelight' in F:\PythonTestbench\jars\oceansdelight.jar, using '0.0.0'
+2024-07-29 01:01:25,642 - WARNING - Invalid version '1.20.1-0.2.5' for mod 'irisflw' in F:\PythonTestbench\jars\oculus-flywheel-compat-1.20.1-0.2.5.jar, using '0.0.0'
+2024-07-29 01:01:25,648 - WARNING - Invalid version '1.20.1-84-FORGE' for mod 'patchouli' in F:\PythonTestbench\jars\patchouli.jar, using '0.0.0'
+2024-07-29 01:01:25,732 - WARNING - Invalid version '2000.0.3-build.143' for mod 'polylib' in F:\PythonTestbench\jars\polylib.jar, using '0.0.0'
+2024-07-29 01:01:25,843 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'rocknroller' in F:\PythonTestbench\jars\RocknRoller-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:25,847 - WARNING - Invalid version '1.20.1-4.2.1' for mod 'shouldersurfing' in F:\PythonTestbench\jars\ShoulderSurfing-Forge-1.20.1-4.2.1.jar, using '0.0.0'
+2024-07-29 01:01:25,849 - WARNING - Invalid version '1.20.1-1.0.0' for mod 'silentsdelight' in F:\PythonTestbench\jars\silentsdelight.jar, using '0.0.0'
+2024-07-29 01:01:25,888 - WARNING - Invalid version '1.20-2.8.17' for mod 'supplementaries' in F:\PythonTestbench\jars\supplementaries.jar, using '0.0.0'
+2024-07-29 01:01:25,925 - WARNING - Invalid version '1.0.1-hotfix' for mod 'tacz' in F:\PythonTestbench\jars\tacz.jar, using '0.0.0'
+2024-07-29 01:01:25,953 - WARNING - Invalid version '0.1.4-1.20.1' for mod 'tetraextras' in F:\PythonTestbench\jars\tetraextras.jar, using '0.0.0'
+2024-07-29 01:01:25,955 - WARNING - Invalid version '1.19.2-0.0.2' for mod 'tetra_nihilo' in F:\PythonTestbench\jars\tetra_nihilo.jar, using '0.0.0'
+2024-07-29 01:01:26,053 - WARNING - Invalid version '1.20.1-5.12.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\tofucraft.jar, using '0.0.0'
+2024-07-29 01:01:26,076 - WARNING - Invalid version '1.20.1-5.13.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\TofuCraftReload-1.20.1-5.13.2.0.jar, using '0.0.0'
+2024-07-29 01:01:26,084 - WARNING - Invalid version '1.20.1-3.0.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight-1.20.1-3.0.0.jar, using '0.0.0'
+2024-07-29 01:01:26,085 - WARNING - Invalid version '1.20.1-2.5.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight.jar, using '0.0.0'
+2024-07-29 01:01:26,091 - WARNING - Invalid version '1.0-1.20.1' for mod 'toolbooster' in F:\PythonTestbench\jars\toolbooster.jar, using '0.0.0'
+2024-07-29 01:01:26,113 - WARNING - Invalid version '1.1.10-hotfix' for mod 'touhou_little_maid' in F:\PythonTestbench\jars\touhou_little_maid.jar, using '0.0.0'
+2024-07-29 01:01:26,129 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'tweakerge' in F:\PythonTestbench\jars\Tweakerge-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:26,221 - WARNING - Invalid version '1.4.0-1.20.1' for mod 'undergardenpatch' in F:\PythonTestbench\jars\undergardenpatch.jar, using '0.0.0'
+2024-07-29 01:01:26,232 - WARNING - Invalid version '1.20.1-2.5.19' for mod 'voicechat' in F:\PythonTestbench\jars\voicechat-forge-1.20.1-2.5.19.jar, using '0.0.0'
+2024-07-29 01:01:26,248 - WARNING - Invalid version '2.3.1-build.6+mc1.20.1' for mod 'yeetusexperimentus' in F:\PythonTestbench\jars\YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:01:26,296 - INFO - Missing mods.toml files: ['ae2-emi-crafting-1.3.1.jar', 'Connector-1.0.0-beta.44+1.20.1.jar', 'I18nUpdateMod-3.5.5-all.jar', 'kotlinforforge-4.11.0-all.jar']
+2024-07-29 01:04:16,492 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:04:16,493 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:04:16,493 - WARNING - Invalid version '15.2.3-forge' for mod 'ae2wtlib' in F:\PythonTestbench\jars\ae2wtlib.jar, using '0.0.0'
+2024-07-29 01:04:16,494 - WARNING - Invalid version '1.20.1-1.0.1-neoforge' for mod 'aeroblender' in F:\PythonTestbench\jars\aeroblender.jar, using '0.0.0'
+2024-07-29 01:04:16,547 - WARNING - Invalid version '1.20.1-1.4.2-neoforge' for mod 'aether' in F:\PythonTestbench\jars\aether.jar, using '0.0.0'
+2024-07-29 01:04:16,562 - WARNING - Invalid version '1.1.2-1.20.1' for mod 'aetheric_tetranomicon' in F:\PythonTestbench\jars\aetheric_tetranomicon.jar, using '0.0.0'
+2024-07-29 01:04:16,623 - WARNING - Invalid version '1.20-1.2.8' for mod 'amendments' in F:\PythonTestbench\jars\amendments.jar, using '0.0.0'
+2024-07-29 01:04:16,697 - WARNING - Invalid version '1.20.1-5.2.2' for mod 'bagus_lib' in F:\PythonTestbench\jars\bagus_lib-1.20.1-5.2.2.jar, using '0.0.0'
+2024-07-29 01:04:16,704 - WARNING - Invalid version '0.4.3-1.20.x' for mod 'bellsandwhistles' in F:\PythonTestbench\jars\bellsandwhistles.jar, using '0.0.0'
+2024-07-29 01:04:16,738 - WARNING - Invalid version '0.1.7-mc1.20.1' for mod 'bocchud' in F:\PythonTestbench\jars\BoccHUD-0.1.7-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:16,771 - WARNING - Invalid version '1.20.1-445-FORGE' for mod 'botania' in F:\PythonTestbench\jars\Botania-1.20.1-445-FORGE.jar, using '0.0.0'
+2024-07-29 01:04:16,810 - WARNING - Invalid version '1.20.1-444-FORGE' for mod 'botania' in F:\PythonTestbench\jars\botania.jar, using '0.0.0'
+2024-07-29 01:04:16,818 - WARNING - Invalid version '1.20.1-2.0' for mod 'brewinandchewin' in F:\PythonTestbench\jars\brewinandchewin.jar, using '0.0.0'
+2024-07-29 01:04:16,824 - WARNING - Invalid version '0.2.0-c3me-alpha.11.52-dirty' for mod 'c3me' in F:\PythonTestbench\jars\c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61.jar, using '0.0.0'
+2024-07-29 01:04:16,826 - WARNING - Invalid version '1.2.0-SNAPSHOT' for mod 'caramelchat' in F:\PythonTestbench\jars\caramelChat-mc1.20.1-forge-1.2.0-SNAPSHOT.jar, using '0.0.0'
+2024-07-29 01:04:16,828 - WARNING - Invalid version '1.20.1-0.4n' for mod 'casualness_delight' in F:\PythonTestbench\jars\casualness_delight.jar, using '0.0.0'
+2024-07-29 01:04:16,831 - WARNING - Invalid version '1.0.3-forge-1.20.1' for mod 'chefsdelight' in F:\PythonTestbench\jars\chefsdelight.jar, using '0.0.0'
+2024-07-29 01:04:16,849 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:04:16,849 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:04:16,852 - WARNING - Invalid version '1.0.4-1.20.1' for mod 'corn_delight' in F:\PythonTestbench\jars\corn_delight.jar, using '0.0.0'
+2024-07-29 01:04:16,852 - WARNING - Invalid version '1.20.1-v1a' for mod 'cosmeticarmorreworked' in F:\PythonTestbench\jars\cosmeticarmorreworked.jar, using '0.0.0'
+2024-07-29 01:04:16,893 - WARNING - Invalid version '0.5.1.f' for mod 'create' in F:\PythonTestbench\jars\create.jar, using '0.0.0'
+2024-07-29 01:04:16,905 - WARNING - Invalid version '1.20.1-1.2.4d' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition-1.20.1-1.2.4d.jar, using '0.0.0'
+2024-07-29 01:04:16,910 - WARNING - Invalid version '1.20.1-1.2.4c' for mod 'createaddition' in F:\PythonTestbench\jars\createaddition.jar, using '0.0.0'
+2024-07-29 01:04:16,923 - WARNING - Invalid version '0.5.4-nightly-8b9cea6' for mod 'createbigcannons' in F:\PythonTestbench\jars\createbigcannons.jar, using '0.0.0'
+2024-07-29 01:04:16,938 - WARNING - Invalid version '2.0.2-1.20.1-forge' for mod 'createdeco' in F:\PythonTestbench\jars\createdeco.jar, using '0.0.0'
+2024-07-29 01:04:16,941 - WARNING - Invalid version '2.0.7-1.20.1' for mod 'createendertransmission' in F:\PythonTestbench\jars\createendertransmission.jar, using '0.0.0'
+2024-07-29 01:04:16,941 - WARNING - Invalid version '2.1.1-1.20.1' for mod 'createliquidfuel' in F:\PythonTestbench\jars\createliquidfuel.jar, using '0.0.0'
+2024-07-29 01:04:16,954 - WARNING - Invalid version '0.8.2-mc1.20.1' for mod 'create_connected' in F:\PythonTestbench\jars\create_connected.jar, using '0.0.0'
+2024-07-29 01:04:16,958 - WARNING - Invalid version '1.2.9.d' for mod 'create_enchantment_industry' in F:\PythonTestbench\jars\create_enchantment_industry.jar, using '0.0.0'
+2024-07-29 01:04:16,964 - WARNING - Invalid version '1.5.0-mc1.20.1' for mod 'create_power_loader' in F:\PythonTestbench\jars\create_power_loader.jar, using '0.0.0'
+2024-07-29 01:04:16,964 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'create_tweaked_controllers' in F:\PythonTestbench\jars\create_tweaked_controllers.jar, using '0.0.0'
+2024-07-29 01:04:16,995 - WARNING - Invalid version '1.20.1-1.0.4' for mod 'deep_aether' in F:\PythonTestbench\jars\deep_aether.jar, using '0.0.0'
+2024-07-29 01:04:17,027 - WARNING - Invalid version '1.20-1.8.17b' for mod 'dummmmmmy' in F:\PythonTestbench\jars\dummmmmmy.jar, using '0.0.0'
+2024-07-29 01:04:17,031 - WARNING - Invalid version '2.1.58-1.20.x' for mod 'dungeons_arise' in F:\PythonTestbench\jars\dungeons_arise.jar, using '0.0.0'
+2024-07-29 01:04:17,042 - WARNING - Invalid version '1.1.10+1.20.1+forge' for mod 'emi' in F:\PythonTestbench\jars\emi-1.1.10+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 01:04:17,046 - WARNING - Invalid version '0.6.6+fix3+1.20.1+forge' for mod 'emi_loot' in F:\PythonTestbench\jars\emi_loot-0.6.6+fix3+1.20.1+forge.jar, using '0.0.0'
+2024-07-29 01:04:17,053 - WARNING - Invalid version '0.3.4-forge' for mod 'euphoria_patcher' in F:\PythonTestbench\jars\EuphoriaPatcher-0.3.4-forge.jar, using '0.0.0'
+2024-07-29 01:04:17,054 - WARNING - Invalid version '0.92.2+1.11.8+1.20.1' for mod 'fabric_api' in F:\PythonTestbench\jars\fabric-api-0.92.2+1.11.8+1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,060 - WARNING - Invalid version '1.20.1-1.2.4' for mod 'farmersdelight' in F:\PythonTestbench\jars\farmersdelight.jar, using '0.0.0'
+2024-07-29 01:04:17,065 - WARNING - Invalid version '0.1.5-mc1.20.1' for mod 'forgematica' in F:\PythonTestbench\jars\Forgematica-0.1.5-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,091 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:04:17,091 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:04:17,111 - WARNING - Invalid version '1.20-1.1.2' for mod 'jepp' in F:\PythonTestbench\jars\jepp-1.20-1.1.2.jar, using '0.0.0'
+2024-07-29 01:04:17,122 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:04:17,122 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:04:17,127 - WARNING - Invalid version '1.20.1-0.6.1' for mod 'locusazzurro_icaruswings' in F:\PythonTestbench\jars\locusazzurro_icaruswings.jar, using '0.0.0'
+2024-07-29 01:04:17,177 - WARNING - Invalid version '0.1.11-mc1.20.1' for mod 'mafglib' in F:\PythonTestbench\jars\MaFgLib-0.1.11-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,234 - WARNING - Invalid version '1.20.1-1.2.3' for mod 'miners_delight' in F:\PythonTestbench\jars\miners_delight.jar, using '0.0.0'
+2024-07-29 01:04:17,235 - WARNING - Invalid version '0.2.1-mc1.20.1-forge' for mod 'minihudextra' in F:\PythonTestbench\jars\MiniHUD-Extra-0.2.1-mc1.20.1-forge.jar, using '0.0.0'
+2024-07-29 01:04:17,261 - WARNING - Invalid version '1.20-2.12.9' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight-1.20-2.12.9-forge.jar, using '0.0.0'
+2024-07-29 01:04:17,263 - WARNING - Invalid version '1.20-2.12.6' for mod 'moonlight' in F:\PythonTestbench\jars\moonlight.jar, using '0.0.0'
+2024-07-29 01:04:17,267 - WARNING - Invalid version '1.4.7-1.20.1' for mod 'mysterious_mountain_lib' in F:\PythonTestbench\jars\mysterious_mountain_lib.jar, using '0.0.0'
+2024-07-29 01:04:17,268 - WARNING - Invalid version '1.20.1-1.11.2-forge' for mod 'naturescompass' in F:\PythonTestbench\jars\naturescompass.jar, using '0.0.0'
+2024-07-29 01:04:17,270 - WARNING - Invalid version '1.20.1-4.0' for mod 'nethersdelight' in F:\PythonTestbench\jars\nethersdelight.jar, using '0.0.0'
+2024-07-29 01:04:17,271 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:04:17,272 - WARNING - Invalid version '1.20.1-v2.2.2' for mod 'nochatreports' in F:\PythonTestbench\jars\NoChatReports-FORGE-1.20.1-v2.2.2.jar, using '0.0.0'
+2024-07-29 01:04:17,277 - WARNING - Invalid version '1.0.2-1.20' for mod 'oceansdelight' in F:\PythonTestbench\jars\oceansdelight.jar, using '0.0.0'
+2024-07-29 01:04:17,277 - WARNING - Invalid version '1.20.1-0.2.5' for mod 'irisflw' in F:\PythonTestbench\jars\oculus-flywheel-compat-1.20.1-0.2.5.jar, using '0.0.0'
+2024-07-29 01:04:17,283 - WARNING - Invalid version '1.20.1-84-FORGE' for mod 'patchouli' in F:\PythonTestbench\jars\patchouli.jar, using '0.0.0'
+2024-07-29 01:04:17,368 - WARNING - Invalid version '2000.0.3-build.143' for mod 'polylib' in F:\PythonTestbench\jars\polylib.jar, using '0.0.0'
+2024-07-29 01:04:17,479 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'rocknroller' in F:\PythonTestbench\jars\RocknRoller-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,483 - WARNING - Invalid version '1.20.1-4.2.1' for mod 'shouldersurfing' in F:\PythonTestbench\jars\ShoulderSurfing-Forge-1.20.1-4.2.1.jar, using '0.0.0'
+2024-07-29 01:04:17,484 - WARNING - Invalid version '1.20.1-1.0.0' for mod 'silentsdelight' in F:\PythonTestbench\jars\silentsdelight.jar, using '0.0.0'
+2024-07-29 01:04:17,524 - WARNING - Invalid version '1.20-2.8.17' for mod 'supplementaries' in F:\PythonTestbench\jars\supplementaries.jar, using '0.0.0'
+2024-07-29 01:04:17,560 - WARNING - Invalid version '1.0.1-hotfix' for mod 'tacz' in F:\PythonTestbench\jars\tacz.jar, using '0.0.0'
+2024-07-29 01:04:17,588 - WARNING - Invalid version '0.1.4-1.20.1' for mod 'tetraextras' in F:\PythonTestbench\jars\tetraextras.jar, using '0.0.0'
+2024-07-29 01:04:17,590 - WARNING - Invalid version '1.19.2-0.0.2' for mod 'tetra_nihilo' in F:\PythonTestbench\jars\tetra_nihilo.jar, using '0.0.0'
+2024-07-29 01:04:17,686 - WARNING - Invalid version '1.20.1-5.12.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\tofucraft.jar, using '0.0.0'
+2024-07-29 01:04:17,708 - WARNING - Invalid version '1.20.1-5.13.2.0' for mod 'tofucraft' in F:\PythonTestbench\jars\TofuCraftReload-1.20.1-5.13.2.0.jar, using '0.0.0'
+2024-07-29 01:04:17,717 - WARNING - Invalid version '1.20.1-3.0.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight-1.20.1-3.0.0.jar, using '0.0.0'
+2024-07-29 01:04:17,718 - WARNING - Invalid version '1.20.1-2.5.0' for mod 'tofudelight' in F:\PythonTestbench\jars\tofudelight.jar, using '0.0.0'
+2024-07-29 01:04:17,723 - WARNING - Invalid version '1.0-1.20.1' for mod 'toolbooster' in F:\PythonTestbench\jars\toolbooster.jar, using '0.0.0'
+2024-07-29 01:04:17,747 - WARNING - Invalid version '1.1.10-hotfix' for mod 'touhou_little_maid' in F:\PythonTestbench\jars\touhou_little_maid.jar, using '0.0.0'
+2024-07-29 01:04:17,763 - WARNING - Invalid version '0.1.4-mc1.20.1' for mod 'tweakerge' in F:\PythonTestbench\jars\Tweakerge-0.1.4-mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,854 - WARNING - Invalid version '1.4.0-1.20.1' for mod 'undergardenpatch' in F:\PythonTestbench\jars\undergardenpatch.jar, using '0.0.0'
+2024-07-29 01:04:17,864 - WARNING - Invalid version '1.20.1-2.5.19' for mod 'voicechat' in F:\PythonTestbench\jars\voicechat-forge-1.20.1-2.5.19.jar, using '0.0.0'
+2024-07-29 01:04:17,880 - WARNING - Invalid version '2.3.1-build.6+mc1.20.1' for mod 'yeetusexperimentus' in F:\PythonTestbench\jars\YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar, using '0.0.0'
+2024-07-29 01:04:17,926 - INFO - Missing mods.toml files: ['ae2-emi-crafting-1.3.1.jar', 'Connector-1.0.0-beta.44+1.20.1.jar', 'I18nUpdateMod-3.5.5-all.jar', 'kotlinforforge-4.11.0-all.jar']
+2024-07-29 01:07:55,310 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:07:55,310 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:07:55,659 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:07:55,659 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:07:55,893 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:07:55,893 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:07:55,926 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:07:55,926 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:07:56,071 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:07:56,710 - INFO - Missing mods.toml files: ['ae2-emi-crafting-1.3.1.jar', 'Connector-1.0.0-beta.44+1.20.1.jar', 'I18nUpdateMod-3.5.5-all.jar', 'kotlinforforge-4.11.0-all.jar']
+2024-07-29 01:12:03,386 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:12:03,386 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:12:03,728 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:12:03,729 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:12:03,964 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:12:03,964 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:12:03,995 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:12:03,995 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:12:04,141 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:12:04,779 - INFO - Missing mods.toml files: ['ae2-emi-crafting-1.3.1.jar', 'Connector-1.0.0-beta.44+1.20.1.jar', 'I18nUpdateMod-3.5.5-all.jar', 'kotlinforforge-4.11.0-all.jar']
+2024-07-29 01:32:15,580 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:32:15,580 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:32:15,580 - WARNING - No version information found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar, using '0.0.0'
+2024-07-29 01:32:15,920 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:32:15,921 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:32:16,158 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:32:16,158 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:32:16,158 - WARNING - No version information found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar, using '0.0.0'
+2024-07-29 01:32:16,189 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:32:16,189 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:32:16,196 - WARNING - No version information found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar, using '0.0.0'
+2024-07-29 01:32:16,346 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:59:12,645 - WARNING - No mods.toml found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar
+2024-07-29 01:59:12,645 - WARNING - No valid mods found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:59:12,646 - WARNING - No version information found in F:\PythonTestbench\jars\ae2-emi-crafting-1.3.1.jar, using '0.0.0'
+2024-07-29 01:59:12,995 - WARNING - No mods.toml found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 01:59:12,996 - WARNING - No valid mods found in F:\PythonTestbench\jars\Connector-1.0.0-beta.44+1.20.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:59:13,231 - WARNING - No mods.toml found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 01:59:13,231 - WARNING - No valid mods found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:59:13,232 - WARNING - No version information found in F:\PythonTestbench\jars\I18nUpdateMod-3.5.5-all.jar, using '0.0.0'
+2024-07-29 01:59:13,263 - WARNING - No mods.toml found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar
+2024-07-29 01:59:13,264 - WARNING - No valid mods found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 01:59:13,271 - WARNING - No version information found in F:\PythonTestbench\jars\kotlinforforge-4.11.0-all.jar, using '0.0.0'
+2024-07-29 01:59:13,421 - WARNING - No Implementation-Version found in MANIFEST.MF for F:\PythonTestbench\jars\netmusic.jar, using '0.0.0'
+2024-07-29 01:59:15,895 - INFO - Deleted: F:\PythonTestbench\jars\sliceanddice.jar
+2024-07-29 01:59:15,896 - INFO - Deleted: F:\PythonTestbench\jars\citadel.jar
+2024-07-29 01:59:15,898 - INFO - Deleted: F:\PythonTestbench\jars\touhou_little_maid.jar
+2024-07-29 01:59:15,898 - INFO - Deleted: F:\PythonTestbench\jars\youkaishomecoming.jar
+2024-07-29 01:59:15,899 - INFO - Deleted: F:\PythonTestbench\jars\CrabbersDelight-1.20.1-1.1.5a.jar
+2024-07-29 01:59:15,899 - INFO - Deleted: F:\PythonTestbench\jars\travelersbackpack.jar
+2024-07-29 01:59:15,899 - INFO - Deleted: F:\PythonTestbench\jars\delightful.jar
+2024-07-29 01:59:15,900 - INFO - Deleted: F:\PythonTestbench\jars\waystones.jar
+2024-07-29 01:59:15,900 - INFO - Deleted: F:\PythonTestbench\jars\botarium.jar
+2024-07-29 01:59:15,900 - INFO - Deleted: F:\PythonTestbench\jars\ends_delight.jar
+2024-07-29 01:59:15,903 - INFO - Deleted: F:\PythonTestbench\jars\ars_nouveau.jar
+2024-07-29 01:59:15,903 - INFO - Deleted: F:\PythonTestbench\jars\createoreexcavation.jar
+2024-07-29 01:59:15,904 - INFO - Deleted: F:\PythonTestbench\jars\tetra.jar
+2024-07-29 01:59:15,905 - INFO - Deleted: F:\PythonTestbench\jars\tacz.jar
+2024-07-29 01:59:15,907 - INFO - Deleted: F:\PythonTestbench\jars\lradd.jar
+2024-07-29 01:59:15,907 - INFO - Deleted: F:\PythonTestbench\jars\toms_storage.jar
+2024-07-29 01:59:15,908 - INFO - Deleted: F:\PythonTestbench\jars\slashblade.jar
+2024-07-29 01:59:15,908 - INFO - Deleted: F:\PythonTestbench\jars\tetracelium.jar
+2024-07-29 01:59:15,911 - INFO - Deleted: F:\PythonTestbench\jars\aether_redux.jar
+2024-07-29 01:59:15,911 - INFO - Deleted: F:\PythonTestbench\jars\twilightdelight.jar
+2024-07-29 01:59:15,911 - INFO - Deleted: F:\PythonTestbench\jars\barbequesdelight.jar
+2024-07-29 01:59:15,911 - INFO - Deleted: F:\PythonTestbench\jars\mcwroofs.jar
+2024-07-29 02:05:10,865 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\ae2-emi-crafting-1.3.1.jar
+2024-07-29 02:05:10,865 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\ae2-emi-crafting-1.3.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 02:05:10,866 - WARNING - No version information found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\ae2-emi-crafting-1.3.1.jar, using '0.0.0'
+2024-07-29 02:05:11,424 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\Connector-1.0.0-beta.44+1.20.1.jar
+2024-07-29 02:05:11,424 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\Connector-1.0.0-beta.44+1.20.1.jar. Attempting to read MANIFEST.MF.
+2024-07-29 02:05:11,890 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\I18nUpdateMod-3.5.5-all.jar
+2024-07-29 02:05:11,890 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\I18nUpdateMod-3.5.5-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 02:05:11,890 - WARNING - No version information found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\I18nUpdateMod-3.5.5-all.jar, using '0.0.0'
+2024-07-29 02:05:11,987 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\JCPlugin-1.17.x-1.20.x-4.0.4-Forge.jar
+2024-07-29 02:05:11,987 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\JCPlugin-1.17.x-1.20.x-4.0.4-Forge.jar. Attempting to read MANIFEST.MF.
+2024-07-29 02:05:12,007 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\kotlinforforge-4.11.0-all.jar
+2024-07-29 02:05:12,007 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\kotlinforforge-4.11.0-all.jar. Attempting to read MANIFEST.MF.
+2024-07-29 02:05:12,014 - WARNING - No version information found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\kotlinforforge-4.11.0-all.jar, using '0.0.0'
+2024-07-29 02:05:12,803 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\ScalableCatsForce-3.3.1-build-0-with-library.jar
+2024-07-29 02:05:12,803 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - ATM9\minecraft\mods\ScalableCatsForce-3.3.1-build-0-with-library.jar. Attempting to read MANIFEST.MF.
+2024-08-12 05:06:33,365 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\I18nUpdateMod-3.5.5-all.jar
+2024-08-12 05:06:33,366 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\I18nUpdateMod-3.5.5-all.jar. Attempting to read MANIFEST.MF.
+2024-08-12 05:06:33,366 - WARNING - No version information found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\I18nUpdateMod-3.5.5-all.jar, using '0.0.0'
+2024-08-12 05:06:33,455 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\JCPlugin-1.17.x-1.20.x-4.0.4-Forge.jar
+2024-08-12 05:06:33,455 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\JCPlugin-1.17.x-1.20.x-4.0.4-Forge.jar. Attempting to read MANIFEST.MF.
+2024-08-12 05:06:33,483 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\kotlinforforge-4.11.0-all.jar
+2024-08-12 05:06:33,483 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\kotlinforforge-4.11.0-all.jar. Attempting to read MANIFEST.MF.
+2024-08-12 05:06:33,490 - WARNING - No version information found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\kotlinforforge-4.11.0-all.jar, using '0.0.0'
+2024-08-12 05:06:33,873 - WARNING - No mods.toml found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\ScalableCatsForce-3.3.1-build-0-with-library.jar
+2024-08-12 05:06:33,873 - WARNING - No valid mods found in E:\Minecraft\PrismLauncher\instances\All the Mods 9 - No Frills\minecraft\mods\ScalableCatsForce-3.3.1-build-0-with-library.jar. Attempting to read MANIFEST.MF.

@@ -1,0 +1,628 @@
+[
+    {
+        "data": {
+            "id": 1036849,
+            "gameId": 432,
+            "name": "Embeddium Unofficial Japanese Translate (EUJT)",
+            "slug": "ejut",
+            "links": {
+                "websiteUrl": "https://www.curseforge.com/minecraft/texture-packs/ejut",
+                "wikiUrl": "",
+                "issuesUrl": null,
+                "sourceUrl": "https://github.com/penguin06329/Embeddium-Unofficial-Translate"
+            },
+            "summary": "Translated from Embeddium",
+            "status": 4,
+            "downloadCount": 830,
+            "isFeatured": false,
+            "primaryCategoryId": 393,
+            "categories": [
+                {
+                    "id": 393,
+                    "gameId": 432,
+                    "name": "16x",
+                    "slug": "sixteen-x",
+                    "url": "https://www.curseforge.com/minecraft/texture-packs/sixteen-x",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/75/635351598555753321.png",
+                    "dateModified": "2020-06-30T17:54:39.077Z",
+                    "isClass": false,
+                    "classId": 12,
+                    "parentCategoryId": 12
+                },
+                {
+                    "id": 5244,
+                    "gameId": 432,
+                    "name": "Font Packs",
+                    "slug": "font-packs",
+                    "url": "https://www.curseforge.com/minecraft/texture-packs/font-packs",
+                    "iconUrl": "https://media.forgecdn.net/avatars/493/926/637804403044903691.png",
+                    "dateModified": "2022-02-14T12:58:24.507Z",
+                    "isClass": false,
+                    "classId": 12,
+                    "parentCategoryId": 12
+                },
+                {
+                    "id": 4465,
+                    "gameId": 432,
+                    "name": "Mod Support",
+                    "slug": "mod-support",
+                    "url": "https://www.curseforge.com/minecraft/texture-packs/mod-support",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/623/635363922411546592.png",
+                    "dateModified": "2020-06-30T17:54:39.16Z",
+                    "isClass": false,
+                    "classId": 12,
+                    "parentCategoryId": 12
+                }
+            ],
+            "classId": 12,
+            "authors": [
+                {
+                    "id": 109980075,
+                    "name": "penguin06329",
+                    "url": "https://www.curseforge.com/members/penguin06329"
+                }
+            ],
+            "logo": {
+                "id": 1024840,
+                "modId": 1036849,
+                "title": "638548100359317650.png",
+                "description": "",
+                "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/1024/840/256/256/638548100359317650.png",
+                "url": "https://media.forgecdn.net/avatars/1024/840/638548100359317650.png"
+            },
+            "screenshots": [
+                {
+                    "id": 889613,
+                    "modId": 1036849,
+                    "title": "Video Settings Translate",
+                    "description": "Embeddium options screen (Japanese)",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/889/613/310/172/1.png",
+                    "url": "https://media.forgecdn.net/attachments/889/613/1.png"
+                },
+                {
+                    "id": 919491,
+                    "modId": 1036849,
+                    "title": "Mod Menu Translation",
+                    "description": "Translations in Embeddium and Iris Mod Menu",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/919/491/310/172/bf4db8cff7b7bdf4f7c8c442aebaaca9ac022266.png",
+                    "url": "https://media.forgecdn.net/attachments/919/491/bf4db8cff7b7bdf4f7c8c442aebaaca9ac022266.png"
+                }
+            ],
+            "mainFileId": 5570147,
+            "latestFiles": [
+                {
+                    "id": 5433228,
+                    "gameId": 432,
+                    "modId": 1036849,
+                    "isAvailable": true,
+                    "displayName": "AngelicaTranslate-jp1.7.10-0.1.0",
+                    "fileName": "AngelicaTranslate-jp1.7.10-0.1.0.zip",
+                    "releaseType": 3,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "a32103e414e3c5f28f48b0c879d3d88d3ef3bdbf",
+                            "algo": 1
+                        },
+                        {
+                            "value": "18eb2fe4e8aef6d14d860016dabcbb41",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2024-06-16T01:00:19.333Z",
+                    "fileLength": 160899,
+                    "downloadCount": 3,
+                    "downloadUrl": null,
+                    "gameVersions": [
+                        "1.7.10"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "1.7.10",
+                            "gameVersionPadded": "0000000001.0000000007.0000000010",
+                            "gameVersion": "1.7.10",
+                            "gameVersionReleaseDate": "2014-06-16T00:00:00Z",
+                            "gameVersionTypeId": 5
+                        }
+                    ],
+                    "dependencies": [],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 174265263,
+                    "modules": [
+                        {
+                            "name": "pack.png",
+                            "fingerprint": 3587359645
+                        },
+                        {
+                            "name": "assets",
+                            "fingerprint": 829467799
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 3318447740
+                        }
+                    ]
+                },
+                {
+                    "id": 5484624,
+                    "gameId": 432,
+                    "modId": 1036849,
+                    "isAvailable": true,
+                    "displayName": "AngelicaTranslate-mc1.7.10-0.2.1",
+                    "fileName": "AngelicaTranslate-mc1.7.10-0.2.1.zip",
+                    "releaseType": 2,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "ab56fa6a56752a569b042668dd61e325152e3694",
+                            "algo": 1
+                        },
+                        {
+                            "value": "e39fce576461f506bfe13a62ad23de08",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2024-06-29T05:20:17.927Z",
+                    "fileLength": 159412,
+                    "downloadCount": 1,
+                    "downloadUrl": null,
+                    "gameVersions": [
+                        "1.7.10"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "1.7.10",
+                            "gameVersionPadded": "0000000001.0000000007.0000000010",
+                            "gameVersion": "1.7.10",
+                            "gameVersionReleaseDate": "2014-06-16T00:00:00Z",
+                            "gameVersionTypeId": 5
+                        }
+                    ],
+                    "dependencies": [
+                        {
+                            "modId": 988067,
+                            "relationType": 3
+                        }
+                    ],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 2479410412,
+                    "modules": [
+                        {
+                            "name": "pack.png",
+                            "fingerprint": 4200650749
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 1572815922
+                        },
+                        {
+                            "name": "assets",
+                            "fingerprint": 1783006375
+                        }
+                    ]
+                },
+                {
+                    "id": 5570147,
+                    "gameId": 432,
+                    "modId": 1036849,
+                    "isAvailable": true,
+                    "displayName": "EUJT-mc1.19.4-0.2.9",
+                    "fileName": "EUJT-mc1.19.4-0.2.9.zip",
+                    "releaseType": 1,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "a75f8be94f4689895a1972d5f7309d3c752c703c",
+                            "algo": 1
+                        },
+                        {
+                            "value": "3074727374b69d7998e9fd945a360cf1",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2024-07-27T04:24:28.787Z",
+                    "fileLength": 751235,
+                    "downloadCount": 2,
+                    "downloadUrl": null,
+                    "gameVersions": [
+                        "1.19.4"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "1.19.4",
+                            "gameVersionPadded": "0000000001.0000000019.0000000004",
+                            "gameVersion": "1.19.4",
+                            "gameVersionReleaseDate": "2023-03-09T00:00:00Z",
+                            "gameVersionTypeId": 73407
+                        }
+                    ],
+                    "dependencies": [],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 615098523,
+                    "modules": [
+                        {
+                            "name": "pack.png",
+                            "fingerprint": 4200650749
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 3368786499
+                        },
+                        {
+                            "name": "assets",
+                            "fingerprint": 2727855247
+                        }
+                    ]
+                }
+            ],
+            "latestFilesIndexes": [
+                {
+                    "gameVersion": "1.19.4",
+                    "fileId": 5570147,
+                    "filename": "EUJT-mc1.19.4-0.2.9.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73407
+                },
+                {
+                    "gameVersion": "1.19.2",
+                    "fileId": 5570146,
+                    "filename": "EUJT-mc1.19.2-0.2.9.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73407
+                },
+                {
+                    "gameVersion": "1.18.2",
+                    "fileId": 5570144,
+                    "filename": "EUJT-mc1.18.2-0.2.9.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73250
+                },
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.20.4",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.20.5",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.20.6",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.21",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 77784
+                },
+                {
+                    "gameVersion": "1.20.2",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.20.3",
+                    "fileId": 5566509,
+                    "filename": "EUJT-0.2.8.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.16.5",
+                    "fileId": 5503751,
+                    "filename": "EmbeddiumTranslate-0.2.3-mc1.16.5.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 70886
+                },
+                {
+                    "gameVersion": "1.7.10",
+                    "fileId": 5487028,
+                    "filename": "AngelicaTranslate-mc1.7.10-0.2.1-fix.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 5
+                },
+                {
+                    "gameVersion": "1.12.2",
+                    "fileId": 5484628,
+                    "filename": "VintagiumTranslate-mc1.12.2-0.2.1.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 628
+                },
+                {
+                    "gameVersion": "1.7.10",
+                    "fileId": 5484624,
+                    "filename": "AngelicaTranslate-mc1.7.10-0.2.1.zip",
+                    "releaseType": 2,
+                    "gameVersionTypeId": 5
+                },
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 5448336,
+                    "filename": "EmbeddiumTranslate-jp1.20.1-0.1.7-pre1.zip",
+                    "releaseType": 2,
+                    "gameVersionTypeId": 75125
+                },
+                {
+                    "gameVersion": "1.16.3",
+                    "fileId": 5437357,
+                    "filename": "EmbeddiumTranslate-jp1.16.5-0.1.4.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 70886
+                },
+                {
+                    "gameVersion": "1.16.4",
+                    "fileId": 5437357,
+                    "filename": "EmbeddiumTranslate-jp1.16.5-0.1.4.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 70886
+                },
+                {
+                    "gameVersion": "1.16.2",
+                    "fileId": 5437357,
+                    "filename": "EmbeddiumTranslate-jp1.16.5-0.1.4.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 70886
+                },
+                {
+                    "gameVersion": "1.18.1",
+                    "fileId": 5437193,
+                    "filename": "EmbeddiumTranslate-jp1.18.2-0.1.2.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73250
+                },
+                {
+                    "gameVersion": "1.18",
+                    "fileId": 5437193,
+                    "filename": "EmbeddiumTranslate-jp1.18.2-0.1.2.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73250
+                },
+                {
+                    "gameVersion": "1.7.10",
+                    "fileId": 5433228,
+                    "filename": "AngelicaTranslate-jp1.7.10-0.1.0.zip",
+                    "releaseType": 3,
+                    "gameVersionTypeId": 5
+                },
+                {
+                    "gameVersion": "1.12.2",
+                    "fileId": 5431036,
+                    "filename": "VintagiumJPTranslate-mc1.12.2-0.1.0.zip",
+                    "releaseType": 2,
+                    "gameVersionTypeId": 628
+                },
+                {
+                    "gameVersion": "1.19.1",
+                    "fileId": 5431006,
+                    "filename": "EmbeddiumJPTranslate-mc1.19.2-0.1.0.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73407
+                },
+                {
+                    "gameVersion": "1.19",
+                    "fileId": 5431006,
+                    "filename": "EmbeddiumJPTranslate-mc1.19.2-0.1.0.zip",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73407
+                }
+            ],
+            "latestEarlyAccessFilesIndexes": [],
+            "dateCreated": "2024-06-14T13:55:47.087Z",
+            "dateModified": "2024-07-27T04:29:31.377Z",
+            "dateReleased": "2024-07-27T04:24:28.787Z",
+            "allowModDistribution": false,
+            "gamePopularityRank": 22882,
+            "isAvailable": true,
+            "thumbsUpCount": 0,
+            "version": "0.3.27+mc1.20.1"
+        }
+    },
+    {
+        "data": {
+            "id": 1056249,
+            "gameId": 432,
+            "name": "JEI Remove \"Recipe By:\" Tooltip",
+            "slug": "jei-remove-recipe-by-tooltip",
+            "links": {
+                "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/jei-remove-recipe-by-tooltip",
+                "wikiUrl": null,
+                "issuesUrl": null,
+                "sourceUrl": null
+            },
+            "summary": "Mixin based mod to remove JEI's annoying \"Recipe By:\" Tooltip",
+            "status": 4,
+            "downloadCount": 96,
+            "isFeatured": false,
+            "primaryCategoryId": 426,
+            "categories": [
+                {
+                    "id": 426,
+                    "gameId": 432,
+                    "name": "Addons",
+                    "slug": "mc-addons",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons",
+                    "iconUrl": "https://media.forgecdn.net/avatars/5/998/635351477886290676.png",
+                    "dateModified": "2014-05-08T17:09:48.63Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 424,
+                    "gameId": 432,
+                    "name": "Cosmetic",
+                    "slug": "cosmetic",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/cosmetic",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/39/635351497555976928.png",
+                    "dateModified": "2014-05-08T17:42:35.597Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 423,
+                    "gameId": 432,
+                    "name": "Map and Information",
+                    "slug": "map-information",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/map-information",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/38/635351497437388438.png",
+                    "dateModified": "2014-05-08T17:42:23.74Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 5191,
+                    "gameId": 432,
+                    "name": "Utility & QoL",
+                    "slug": "utility-qol",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/utility-qol",
+                    "iconUrl": "https://media.forgecdn.net/avatars/456/558/637727379086405233.png",
+                    "dateModified": "2021-11-17T11:45:09.143Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                }
+            ],
+            "classId": 6,
+            "authors": [
+                {
+                    "id": 30921865,
+                    "name": "pro_goofster",
+                    "url": "https://www.curseforge.com/members/pro_goofster"
+                }
+            ],
+            "logo": {
+                "id": 1032524,
+                "modId": 1056249,
+                "title": "638555677588711565.jpg",
+                "description": "",
+                "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/1032/524/256/256/638555677588711565.jpg",
+                "url": "https://media.forgecdn.net/avatars/1032/524/638555677588711565.jpg"
+            },
+            "screenshots": [],
+            "mainFileId": 5497061,
+            "latestFiles": [
+                {
+                    "id": 5497061,
+                    "gameId": 432,
+                    "modId": 1056249,
+                    "isAvailable": true,
+                    "displayName": "jeirrbt-1.0.jar",
+                    "fileName": "jeirrbt-1.0.jar",
+                    "releaseType": 1,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "60d886cb79ee9e1a283da0bcf60623ca07b202b5",
+                            "algo": 1
+                        },
+                        {
+                            "value": "d224e0974e6eb8814221f7a9cfe0b3eb",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2024-07-03T01:43:21.087Z",
+                    "fileLength": 5135,
+                    "downloadCount": 1,
+                    "downloadUrl": "https://edge.forgecdn.net/files/5497/61/jeirrbt-1.0.jar",
+                    "gameVersions": [
+                        "Client",
+                        "1.19.2",
+                        "Forge"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "Client",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+                            "gameVersionTypeId": 75208
+                        },
+                        {
+                            "gameVersionName": "1.19.2",
+                            "gameVersionPadded": "0000000001.0000000019.0000000002",
+                            "gameVersion": "1.19.2",
+                            "gameVersionReleaseDate": "2022-08-05T14:12:22.413Z",
+                            "gameVersionTypeId": 73407
+                        },
+                        {
+                            "gameVersionName": "Forge",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        }
+                    ],
+                    "dependencies": [],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 3229887187,
+                    "modules": [
+                        {
+                            "name": "META-INF",
+                            "fingerprint": 1198500600
+                        },
+                        {
+                            "name": "com",
+                            "fingerprint": 2133057848
+                        },
+                        {
+                            "name": "jeirrbt.mixins.json",
+                            "fingerprint": 755248874
+                        },
+                        {
+                            "name": "jeirrbt.refmap.json",
+                            "fingerprint": 1493072104
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 3693950886
+                        }
+                    ]
+                }
+            ],
+            "latestFilesIndexes": [
+                {
+                    "gameVersion": "1.19.2",
+                    "fileId": 5497061,
+                    "filename": "jeirrbt-1.0.jar",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 73407,
+                    "modLoader": 1
+                }
+            ],
+            "latestEarlyAccessFilesIndexes": [],
+            "dateCreated": "2024-07-03T01:42:38.647Z",
+            "dateModified": "2024-07-04T09:42:47.073Z",
+            "dateReleased": "2024-07-03T01:43:21.087Z",
+            "allowModDistribution": true,
+            "gamePopularityRank": 999999,
+            "isAvailable": true,
+            "thumbsUpCount": 0,
+            "version": "15.8.0.16"
+        }
+    }
+]
