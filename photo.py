@@ -67,6 +67,6 @@ def organize_photos_by_device_and_manufacturer(source_dir, destination_dir):
                 print(f'Skipped non-image file: {file_name}')  # Log skipped non-image files
 
 # Example usage:
-source_directory = 'E:/照片分类/#1111'
-destination_directory = 'E:/照片分类'
+source_directory = r'D:\分类\#1未分类'
+destination_directory = r'D:\分类\其他'
 organize_photos_by_device_and_manufacturer(source_directory, destination_directory)
