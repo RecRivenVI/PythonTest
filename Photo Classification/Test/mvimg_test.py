@@ -61,5 +61,5 @@ def is_mv_photo(file_path):
         return False
 
 # 测试文件路径
-file_path = r"F:\照片整理目录\自己照片\分类\Xiaomi\23116PN5BC\Photo\MVIMG_20231218_081249.jpg"
+file_path = r"F:\PhotoClassification\Me\Categorized\Xiaomi\23116PN5BC\Photo\MVIMG_20231218_081249.jpg"
 is_mv_photo(file_path)

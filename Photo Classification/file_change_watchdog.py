@@ -88,6 +88,6 @@ def monitor_folder(folder_path, log_file):
     observer.join()
 
 # 示例用法:
-folder_to_monitor = r'F:\照片整理目录\老妈照片'  # 替换为你的文件夹路径
+folder_to_monitor = r'F:\PhotoClassification\Mom'  # 替换为你的文件夹路径
 log_file_path = 'moved_files_log.json'  # 用于记录移动文件的日志文件
 monitor_folder(folder_to_monitor, log_file_path)

@@ -92,9 +92,9 @@ def get_video_taken_time(video_path):
 # 扫描文件夹中的照片和视频
 def scan_folder(folder):
     # 根据路径提取用户和设备信息
-    if '自己照片' in folder:
+    if 'Me' in folder:
         user = '自己'
-    elif '老妈照片' in folder:
+    elif 'Mom' in folder:
         user = '老妈'
     else:
         user = '未知'

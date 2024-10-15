@@ -56,8 +56,8 @@ def group_images_by_date(directory, target_directory):
                 print(f"Moved {image_path} to {new_path}")
 
 # 指定照片的目录路径和目标目录
-source_directory = r'D:\分类\Xiaomi'
-target_directory = r'D:\分类\时间相同'
+source_directory = r'D:\Categorized\Xiaomi'
+target_directory = r'D:\Categorized\时间相同'
 
 # 开始处理
 group_images_by_date(source_directory, target_directory)

@@ -3,8 +3,8 @@ import os
 # 获取当前脚本所在目录
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# 照片整理目录的根路径
-base_dir = r"F:\照片整理目录"
+# PhotoClassification的根路径
+base_dir = r"F:\PhotoClassification"
 
 # 文件夹列表初始化
 folders = []
@@ -12,12 +12,12 @@ folders = []
 # 自动扫描文件夹生成路径列表
 def generate_folder_list(base_dir):
     print("开始扫描文件夹...")
-    for user_folder in ['老妈照片', '自己照片']:  # 假设根目录下只有这两个文件夹
-        user_path = os.path.join(base_dir, user_folder, '分类', '系统相机')
+    for user_folder in ['Mom', 'Me']:  # 假设根目录下只有这两个文件夹
+        user_path = os.path.join(base_dir, user_folder, 'Categorized', 'MiuiCamera')
         print(f"检查用户文件夹: {user_path}")
         if os.path.exists(user_path):
             print(f"找到文件夹: {user_path}")
-            # 遍历系统相机下的设备文件夹
+            # 遍历MiuiCamera下的设备文件夹
             for device_folder in os.listdir(user_path):
                 img_path = os.path.join(user_path, device_folder, 'IMG')
                 mvimg_path = os.path.join(user_path, device_folder, 'MVIMG')

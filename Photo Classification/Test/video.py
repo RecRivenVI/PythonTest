@@ -53,6 +53,6 @@ def organize_videos_by_device_ffmpeg(source_dir, destination_dir):
                 print(f'Skipped non-video file: {file_name}')
 
 # Example usage
-source_directory = r'D:\分类\#1未分类'
-destination_directory = r'D:\分类\其他'
+source_directory = r'D:\Categorized\#1未分类'
+destination_directory = r'D:\Categorized\其他'
 organize_videos_by_device_ffmpeg(source_directory, destination_directory)

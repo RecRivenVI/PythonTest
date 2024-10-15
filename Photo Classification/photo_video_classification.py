@@ -6,6 +6,9 @@ import shutil
 import subprocess
 import xml.etree.ElementTree as ET
 
+# 提高解压缩图片像素限制，允许更大尺寸的图像
+Image.MAX_IMAGE_PIXELS = None
+
 def get_exif_data(image_path):
     """Extract EXIF data from an image."""
     image = Image.open(image_path)
@@ -169,6 +172,6 @@ def organize_files_by_device(source_dir, destination_dir):
                     os.makedirs(vid_folder)
 
 # Example usage:
-source_directory = r"F:\照片整理目录\老妈照片\Pictures"
-destination_directory = r"F:\照片整理目录\老妈照片\分类"
+source_directory = r"F:\PhotoClassification\Me\Uncategorized"
+destination_directory = r"F:\PhotoClassification\Me\Categorized"
 organize_files_by_device(source_directory, destination_directory)
