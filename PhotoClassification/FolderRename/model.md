@@ -421,7 +421,7 @@
 
 `A402XM`: Xiaomi 14T Pro Japan (SoftBank)
 
-
+`2410DPN6CC`: Xiaomi 15 Pro China
 
 `2015011`: Mi Note Global
 

@@ -49,8 +49,8 @@ def rename_folders(base_folder, rename_map):
 
 # 主程序
 if __name__ == "__main__":
-    csv_file_path = 'model.csv'  # 替换为实际的CSV文件路径
-    base_folder = r'F:\PhotoClassification\Mom\Categorized\MiuiCamera'  # 替换为实际的文件夹路径
+    csv_file_path = './PhotoClassification/FolderRename/model.csv'  # 替换为实际的CSV文件路径
+    base_folder = r'F:\PhotoClassification\Me\Categorized\Xiaomi'  # 替换为实际的文件夹路径
 
     # 解析CSV文件并生成重命名映射
     rename_map = parse_csv_file(csv_file_path)

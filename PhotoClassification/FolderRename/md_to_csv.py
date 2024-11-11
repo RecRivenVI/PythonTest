@@ -2,8 +2,8 @@ import csv
 import re
 
 # 输入和输出文件路径
-md_file_path = 'model.md'  # 替换为你的md文件路径
-csv_file_path = 'model.csv'  # 输出的CSV文件路径
+md_file_path = r"./PhotoClassification/FolderRename/model.md"  # 替换为你的md文件路径
+csv_file_path = './PhotoClassification/FolderRename/model.csv'  # 输出的CSV文件路径
 
 # 读取md文件并提取信息
 device_data = []

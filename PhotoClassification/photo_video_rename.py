@@ -6,6 +6,9 @@ from datetime import datetime, timedelta
 import subprocess
 import xml.etree.ElementTree as ET
 
+# 提高解压缩图片像素限制，允许更大尺寸的图像
+Image.MAX_IMAGE_PIXELS = None
+
 # 检查照片是否是 MVIMG
 def is_mv_photo(file_path):
     """Check if the photo is a Micro Video (MVIMG)."""
@@ -211,5 +214,5 @@ def rename_files_in_directory(directory):
                     print(f"No creation time found for video {filename}")
 
 # 指定文件的目录路径
-directory_path = r"F:\PhotoClassification\test"
+directory_path = r"F:\PhotoClassification\Mom\Categorized\Videos"
 rename_files_in_directory(directory_path)
