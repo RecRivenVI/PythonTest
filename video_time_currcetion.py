@@ -70,20 +70,28 @@ def modify_file_times(file_path, new_creation_time, new_modification_time):
     except Exception as e:
         print(f"无法修改文件时间: {e}")
 
-# 视频文件路径
-video_file_path = r"C:\Users\RecRivenVI\Downloads\VID_20240916_133718.mp4"
+# 遍历指定目录及其子目录中的所有文件
+def process_video_files_in_directory(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            # 只处理视频文件，可以根据需要调整文件扩展名
+            if file.lower().endswith(('.mp4', '.mov', '.avi', '.mkv')):
+                video_file_path = os.path.join(root, file)
 
-# 获取视频的拍摄时间和视频时长
-video_taken_time, video_duration = get_video_taken_time(video_file_path)
+                # 获取视频的拍摄时间和视频时长
+                video_taken_time, video_duration = get_video_taken_time(video_file_path)
 
-if video_taken_time and video_duration is not None:
-    # 设置创建时间为视频拍摄时间
-    new_creation_time = video_taken_time
+                if video_taken_time and video_duration is not None:
+                    # 设置创建时间为视频拍摄时间
+                    new_creation_time = video_taken_time
 
-    # 设置修改时间为视频拍摄时间 + 视频时长
-    new_modification_time = video_taken_time + timedelta(seconds=video_duration)
+                    # 设置修改时间为视频拍摄时间 + 视频时长
+                    new_modification_time = video_taken_time + timedelta(seconds=video_duration)
 
-    # 修改文件的时间
-    modify_file_times(video_file_path, new_creation_time, new_modification_time)
-else:
-    print("无法获取视频拍摄时间，文件时间未修改。")
+                    # 修改文件的时间
+                    modify_file_times(video_file_path, new_creation_time, new_modification_time)
+                else:
+                    print(f"无法获取视频 {video_file_path} 的拍摄时间，文件时间未修改。")
+
+# 调用函数处理指定目录
+process_video_files_in_directory(r"G:\Backups\Camera")
