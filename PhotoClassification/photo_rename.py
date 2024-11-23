@@ -13,7 +13,7 @@ def is_mv_photo(file_path):
         with open(file_path, 'rb') as f:
             data = f.read()
             start = data.find(b'<x:xmpmeta')
-            end = data.find(b'</x:xmpmeta>') + len(b'</x:xmpmeta>')
+            end = data.find(b'</x:xmpmeta>') + len(b'</x:xmpmeta>')  # 需要计算结束标签的长度
             if start == -1 or end == -1:
                 return False
             xmp_data = data[start:end]
@@ -67,28 +67,33 @@ def get_unique_filename(directory, base_name, ext, original_file_hash):
     return new_name
 
 def rename_images_in_directory(directory):
-    for root, _, files in os.walk(directory):
-        for filename in files:
-            file_path = os.path.join(root, filename)
-            file_ext = os.path.splitext(filename)[1].lower()
-            if file_ext in ('.jpg', '.jpeg', '.png'):
-                exif_date = get_image_date_taken(file_path)
-                if exif_date:
-                    prefix = "MVIMG" if is_mv_photo(file_path) else "IMG"
-                    try:
-                        formatted_date = datetime.strptime(exif_date, "%Y:%m:%d %H:%M:%S").strftime(f"{prefix}_%Y%m%d_%H%M%S")
-                        file_hash = calculate_file_hash(file_path)
-                        new_name = get_unique_filename(root, formatted_date, file_ext, file_hash)
-                        new_path = os.path.join(root, new_name)
-                        if new_name != filename:
-                            os.rename(file_path, new_path)
-                            print(f"Renamed {filename} to {new_name}")
-                        else:
-                            print(f"Skipped renaming {filename}, as the name is unchanged.")
-                    except ValueError:
-                        print(f"Invalid EXIF date format for {filename}")
-                else:
-                    print(f"No EXIF date found for {filename}")
+    log_file = os.path.join(os.path.dirname(__file__), "photo_rename_log.txt")  # 日志文件路径
+    with open(log_file, "a") as log:  # 以附加模式打开日志文件
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                file_path = os.path.join(root, filename)
+                file_ext = os.path.splitext(filename)[1].lower()
+                if file_ext in ('.jpg', '.jpeg', '.png'):
+                    exif_date = get_image_date_taken(file_path)
+                    if exif_date:
+                        prefix = "MVIMG" if is_mv_photo(file_path) else "IMG"
+                        try:
+                            formatted_date = datetime.strptime(exif_date, "%Y:%m:%d %H:%M:%S").strftime(f"{prefix}_%Y%m%d_%H%M%S")
+                            file_hash = calculate_file_hash(file_path)
+                            new_name = get_unique_filename(root, formatted_date, file_ext, file_hash)
+                            new_path = os.path.join(root, new_name)
+                            if new_name != filename:
+                                os.rename(file_path, new_path)
+                        #        log.write(f"  [INFO] {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - Renamed\n")
+                                log.write(f"    Original: {filename}\n")
+                                log.write(f"    Renamed:  {new_name}\n\n")  # 格式化输出日志
+                                print(f"Renamed {filename} to {new_name}")
+                            #else:
+                            #    print(f"Skipped renaming {filename}, as the name is unchanged.")
+                        except ValueError:
+                            print(f"Invalid EXIF date format for {filename}")
+                    else:
+                        print(f"No EXIF date found for {filename}")
 
-directory_path = r"F:\PhotoClassification\special_test\photo"
+directory_path = r"F:\PhotoClassification\Me\Uncategorized\photox"
 rename_images_in_directory(directory_path)

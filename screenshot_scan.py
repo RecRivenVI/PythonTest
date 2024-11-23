@@ -2,7 +2,7 @@ import os
 import csv
 
 # 文件夹路径
-folder_path = r'F:\PhotoClassification\Me\Categorized\Screenshots'
+folder_path = r'F:\PhotoClassification\Me\Categorized-X\截屏'
 # 输出 CSV 文件名
 output_csv = 'screenshot_packages.csv'
 

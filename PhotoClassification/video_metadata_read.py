@@ -46,5 +46,5 @@ def process_directory(directory):
             extract_xiaomi_tags(file_path)
 
 # 示例目录路径
-directory_path = r"F:\PhotoClassification\special_test\video"
+directory_path = r"F:\PhotoClassification\Me\slow_moment1"
 process_directory(directory_path)

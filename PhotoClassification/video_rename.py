@@ -61,18 +61,15 @@ def get_video_frame_rate(file_path):
             if avg_frame_rate:
                 num, den = map(int, avg_frame_rate.split("/"))
                 frame_rate = num / den
-                #print(f"Actual Frame Rate (avg_frame_rate): {frame_rate}")
                 return frame_rate
             elif r_frame_rate:
                 num, den = map(int, r_frame_rate.split("/"))
                 frame_rate = num / den
-                #print(f"Actual Frame Rate (r_frame_rate): {frame_rate}")
                 return frame_rate
             else:
                 print(f"Warning: No frame rate found for file {file_path}")
         return 0
     except Exception as e:
-        #print(f"Error retrieving frame rate for file {file_path}: {e}")
         return 0
 
 def get_video_taken_time(video_path):
@@ -149,67 +146,63 @@ def is_frame_rate_matching(slow_moment_value, actual_frame_rate):
         # 将实际帧率四舍五入为最接近的 10 的整数倍
         actual_frame_rate = round_to_nearest_10(float(actual_frame_rate))  # 四舍五入为 10 的倍数
         
-        # 输出四舍五入后的帧率
-        #print(f"Comparing Slow Moment: {slow_moment_value} with Actual Frame Rate: {actual_frame_rate}")
-        
         return actual_frame_rate == slow_moment_value
     except ValueError:
         return False
 
-# 修改重命名函数来应用新的比较方式
 def rename_videos_in_directory(directory):
     """
     遍历目录中的所有视频文件并进行重命名，同时输出调试信息。
     """
-    for root, _, files in os.walk(directory):
-        for filename in files:
-            file_path = os.path.join(root, filename)
-            file_ext = os.path.splitext(filename)[1].lower()
-            if file_ext in ('.mp4', '.mov', '.avi', '.mkv'):
-                video_date = get_video_taken_time(file_path)
-                xiaomi_tags = extract_xiaomi_tags(file_path)
-                if video_date:
-                    formatted_date = video_date.strftime("VID_%Y%m%d_%H%M%S")
-                    
-                    # 检测 Xiaomi 特定字段并添加后缀
-                    suffix = ""
-                    if "com.xiaomi.hdr10" in xiaomi_tags and xiaomi_tags["com.xiaomi.hdr10"] == "28516":
-                        suffix += "_DOLBY"
-                    
-                    # 处理 slow_moment 字段
-                    if "com.xiaomi.slow_moment" in xiaomi_tags:
-                        slow_value = xiaomi_tags["com.xiaomi.slow_moment"]
-                        actual_frame_rate = get_video_frame_rate(file_path)
+    log_file = os.path.join(os.path.dirname(__file__), "video_rename_log.txt")  # 日志文件路径
+    with open(log_file, "a") as log:  # 以附加模式打开日志文件
+        for root, _, files in os.walk(directory):
+            for filename in files:
+                file_path = os.path.join(root, filename)
+                file_ext = os.path.splitext(filename)[1].lower()
+                if file_ext in ('.mp4', '.mov', '.avi', '.mkv'):
+                    video_date = get_video_taken_time(file_path)
+                    xiaomi_tags = extract_xiaomi_tags(file_path)
+                    if video_date:
+                        formatted_date = video_date.strftime("VID_%Y%m%d_%H%M%S")
                         
-                        # 输出 slow_moment 和帧速率的值
-                        #print(f"File: {filename}")
-                        #print(f"  Slow Moment: {slow_value}")
-                        #print(f"  Actual Frame Rate: {actual_frame_rate}")
+                        # 检测 Xiaomi 特定字段并添加后缀
+                        suffix = ""
+                        if "com.xiaomi.hdr10" in xiaomi_tags and xiaomi_tags["com.xiaomi.hdr10"] == "28516":
+                            suffix += "_DOLBY"
                         
-                        # 比较 slow_moment 和帧速率
-                        if slow_value.isdigit():
-                            if is_frame_rate_matching(slow_value, actual_frame_rate):
-                                suffix += f"_HSR_{slow_value}"
-                                #print(f"  Frame rate matches slow moment value. Adding _HSR_{slow_value} to filename.")
-                            #else:
-                                #print(f"  Frame rate does not match slow moment value. Skipping _HSR_{slow_value}.")
-                        #else:
-                            #print(f"  Invalid slow moment value: {slow_value}. Skipping comparison.")
-                    
-                    # 获取文件哈希值并生成新的文件名
-                    file_hash = calculate_file_hash(file_path)
-                    new_name = get_unique_filename(root, formatted_date + suffix, file_ext, file_hash)
-                    new_path = os.path.join(root, new_name)
-                    
-                    # 重命名文件
-                    if new_name != filename:
-                        os.rename(file_path, new_path)
-                        print(f"Renamed {filename} to {new_name}")
+                        # 处理 slow_moment 字段
+                        if "com.xiaomi.slow_moment" in xiaomi_tags:
+                            slow_value = xiaomi_tags["com.xiaomi.slow_moment"]
+                            actual_frame_rate = get_video_frame_rate(file_path)
+                            
+                            # 比较 slow_moment 和帧速率
+                            if slow_value.isdigit():
+                                if is_frame_rate_matching(slow_value, actual_frame_rate):
+                                    suffix += f"_HSR_{slow_value}"
+                            
+                        # 获取文件哈希值并生成新的文件名
+                        file_hash = calculate_file_hash(file_path)
+                        new_name = get_unique_filename(root, formatted_date + suffix, file_ext, file_hash)
+                        new_path = os.path.join(root, new_name)
+                        
+                        # 写入日志并重命名文件
+                        if new_name != filename:
+                            os.rename(file_path, new_path)
+                    #        log.write(f"  [INFO] {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - Renamed\n")
+                            log.write(f"    Original: {filename}\n")
+                            log.write(f"    Renamed:  {new_name}\n\n")  # 格式化输出日志
+                            print(f"Renamed {filename} to {new_name}")
+                    #    else:
+                    #        log.write(f"  [INFO] {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - Skipped\n")
+                    #        log.write(f"    Original: {filename}\n")
+                    #        log.write(f"    Reason: Name unchanged\n\n")
                     else:
-                        print(f"Skipped renaming {filename}, as the name is unchanged.")
-                else:
-                    print(f"No creation time found for video {filename}")
+                        log.write(f"  [INFO] {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - No creation time\n")
+                        log.write(f"    File: {filename}\n")
+                        log.write(f"    Reason: No creation time found\n\n")
+                        print(f"No creation time found for video {filename}")
 
 # 示例目录路径
-directory_path = r"F:\PhotoClassification\Me\Videos"
+directory_path = r"F:\PhotoClassification\Me\Uncategorized\Videos"
 rename_videos_in_directory(directory_path)
