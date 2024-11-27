@@ -1,51 +1,75 @@
-from PIL import Image
 import os
 import shutil
+import hashlib
+import sys
+import io
+import re
 
-# 增加 Pillow 允许的最大图像像素数
-Image.MAX_IMAGE_PIXELS = 1000000000  # 设置为更大的值，例：10亿个像素
+# 设置 stdout 为 utf-8 编码
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-# 增加解压缩炸弹宽容度
-Image.MAX_DECOMPRESSION_PIXELS = 1000000000  # 设置更高的解压缩限制
-
-# 定义常见图片扩展名
-COMMON_IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff'}
-
-def is_image_file(file_path):
+def calculate_file_hash(file_path, hash_algo='md5'):
+    """计算文件的 MD5 哈希值"""
+    hash_func = hashlib.new(hash_algo)
     try:
-        # 尝试打开文件以确认它是否为图片
-        with Image.open(file_path) as img:
-            img.verify()  # 验证图像文件完整性
-            return True
-    except (IOError, SyntaxError, ValueError, Image.DecompressionBombError):
-        # 如果文件无法打开、不是图片，或格式不受支持，或者触发解压缩炸弹错误，返回 False
-        return False
+        with open(file_path, 'rb') as f:
+            # 逐块读取文件进行哈希计算
+            while chunk := f.read(8192):
+                hash_func.update(chunk)
+        return hash_func.hexdigest()
+    except Exception as e:
+        print(f"Error calculating hash for {file_path}: {e}")
+        return None
 
-def move_image_files(src_directory, dest_directory):
+def extract_hash_from_filename(filename, hash_length=32):
+    """从文件名中提取哈希值部分"""
+    # 提取文件名的哈希部分，假设哈希部分是由32个字符（MD5长度）组成
+    # 用正则表达式提取文件名开头的哈希部分，忽略 Id_* 后缀
+    match = re.match(r"([a-f0-9]{32})", filename.split('.')[0], re.IGNORECASE)
+    if match:
+        return match.group(1)  # 返回匹配的哈希部分
+    return None
+
+def move_files(src_directory, dest_directory, hash_algo='md5'):
     # 遍历目录下的所有文件和子文件夹
     for root, _, files in os.walk(src_directory):
         for filename in files:
             file_path = os.path.join(root, filename)
-            file_extension = os.path.splitext(filename)[1].lower()
             
-            if os.path.isfile(file_path) and file_extension in COMMON_IMAGE_EXTENSIONS:
-                # 检查文件是否为图片
-                if is_image_file(file_path):
-                    # 计算目标路径，保留目录结构
-                    relative_path = os.path.relpath(root, src_directory)
-                    dest_path = os.path.join(dest_directory, relative_path)
-                    os.makedirs(dest_path, exist_ok=True)
-                    
-                    # 移动文件到目标目录
-                    shutil.move(file_path, os.path.join(dest_path, filename))
-                    
-                    # 捕获并跳过无法编码的字符
-                    try:
-                        print(f"Moved image file {file_path} to {dest_path}")
-                    except UnicodeEncodeError:
-                        pass  # 如果遇到编码错误，跳过该打印语句
+            # 计算文件的 MD5 哈希值
+            file_hash = calculate_file_hash(file_path, hash_algo)
+            if not file_hash:
+                continue  # 如果无法计算哈希，跳过该文件
 
-# 示例：扫描 E:\test，并将识别为图片的文件移动到 E:\test1
+            # 提取文件名中的哈希部分
+            filename_hash_prefix = extract_hash_from_filename(filename)
+            
+            if not filename_hash_prefix:
+                continue  # 如果文件名中没有找到有效的哈希部分，跳过该文件
+
+            # 输出文件名和哈希值
+            try:
+                print(f"File: {filename}, Hash: {file_hash}")
+            except UnicodeEncodeError:
+                # 如果遇到编码错误，跳过该打印语句
+                print(f"File: {filename} (contains non-printable characters)")
+
+            # 完全匹配文件的哈希值
+            if file_hash == filename_hash_prefix:  # 如果哈希值完全匹配
+                # 计算目标路径，保留目录结构
+                relative_path = os.path.relpath(root, src_directory)
+                dest_path = os.path.join(dest_directory, relative_path)
+                os.makedirs(dest_path, exist_ok=True)
+                
+                # 移动文件到目标目录
+                shutil.move(file_path, os.path.join(dest_path, filename))
+                
+                try:
+                    print(f"Moved file {file_path} to {dest_path}")
+                except UnicodeEncodeError:
+                    pass  # 如果遇到编码错误，跳过该打印语句
+
+# 示例：扫描 E:\test，并将哈希匹配的文件移动到 E:\test1
 src_directory = r"E:\Root"
 dest_directory = r"E:\Root1"
-move_image_files(src_directory, dest_directory)
+move_files(src_directory, dest_directory)
