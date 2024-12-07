@@ -172,6 +172,6 @@ def organize_files_by_device(source_dir, destination_dir):
                     os.makedirs(vid_folder)
 
 # Example usage:
-source_directory = r"F:\PhotoClassification\Me\Uncategorized"
-destination_directory = r"F:\PhotoClassification\Me\Categorized"
+source_directory = r"F:\PhotoClassification\XiaomisPhoto\zhanshiji"
+destination_directory = r"F:\PhotoClassification\XiaomisPhoto\zhanshiji1"
 organize_files_by_device(source_directory, destination_directory)
