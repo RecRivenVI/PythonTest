@@ -1,0 +1,21 @@
+    Original: VID_20231112_165313_HSR_240.mp4
+    Renamed:  VID_20231112_165313.mp4
+
+    Original: VID_20231218_083530_HSR_120.mp4
+    Renamed:  VID_20231218_083530.mp4
+
+    Original: VID_20241211_154614.mp4
+    Renamed:  VID_20241211_154617.mp4
+
+    Original: VID_20241211_155234.mp4
+    Renamed:  VID_20241211_155235.mp4
+
+    Original: VID_20241215_000048.mp4
+    Renamed:  VID_20241215_000049.mp4
+
+    Original: VID_20241216_115913.mp4
+    Renamed:  VID_20241216_115914.mp4
+
+    Original: VID_20241216_121732.mp4
+    Renamed:  VID_20241216_121733.mp4
+

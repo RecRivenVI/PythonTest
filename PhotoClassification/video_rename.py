@@ -204,5 +204,5 @@ def rename_videos_in_directory(directory):
                         print(f"No creation time found for video {filename}")
 
 # 示例目录路径
-directory_path = r"F:\PhotoClassification\Me\Uncategorized\Videos"
+directory_path = r"F:\videos"
 rename_videos_in_directory(directory_path)

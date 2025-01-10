@@ -31,3 +31,69 @@
     Original: MVIMG_20241116_200637.jpg
     Renamed:  MVIMG_20241116_200638.jpg
 
+    Original: Image_107348898953059.jpg
+    Renamed:  IMG_20241217_172518.jpg
+
+    Original: IMG_20241125_233909.jpg
+    Renamed:  IMG_20241125_233910.jpg
+
+    Original: IMG_20241128_071912.jpg
+    Renamed:  IMG_20241128_070742_1.jpg
+
+    Original: IMG_20241128_071941.jpg
+    Renamed:  IMG_20241128_070742_2.jpg
+
+    Original: IMG_20241128_132405.jpg
+    Renamed:  IMG_20241128_132406.jpg
+
+    Original: IMG_20241129_153214.jpg
+    Renamed:  IMG_20241129_153215.jpg
+
+    Original: IMG_20241129_170546.jpg
+    Renamed:  IMG_20241129_170547.jpg
+
+    Original: IMG_20241202_135802.jpg
+    Renamed:  IMG_20241202_135803.jpg
+
+    Original: IMG_20241206_195503.jpg
+    Renamed:  IMG_20241206_195504.jpg
+
+    Original: IMG_20241206_195742.jpg
+    Renamed:  IMG_20241206_195743.jpg
+
+    Original: IMG_20241207_100719.jpg
+    Renamed:  IMG_20241207_100720.jpg
+
+    Original: IMG_20241207_100745.jpg
+    Renamed:  IMG_20241207_100746.jpg
+
+    Original: IMG_20241208_203947.jpg
+    Renamed:  IMG_20241208_203948.jpg
+
+    Original: IMG_20241211_032858.jpg
+    Renamed:  IMG_20241211_032859.jpg
+
+    Original: IMG_20241214_010143.jpg
+    Renamed:  IMG_20241214_005939_1.jpg
+
+    Original: IMG_20241214_011106.jpg
+    Renamed:  IMG_20241214_011053_1.jpg
+
+    Original: IMG_20241214_012118.jpg
+    Renamed:  IMG_20241214_011828_1.jpg
+
+    Original: IMG_20241214_024523.jpg
+    Renamed:  IMG_20241214_024509_1.jpg
+
+    Original: IMG_20241217_153433.jpg
+    Renamed:  IMG_20241217_153434.jpg
+
+    Original: IMG_20241217_175058.jpg
+    Renamed:  IMG_20241217_172518_1.jpg
+
+    Original: IMG_20241217_180957.jpg
+    Renamed:  IMG_20241214_005939_2.jpg
+
+    Original: IMG_20241217_184027.jpg
+    Renamed:  IMG_20241213_231701_1.jpg
+
