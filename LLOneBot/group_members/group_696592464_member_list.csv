@@ -1,0 +1,5 @@
+group_id,group_name,group_memo,group_create_time,member_count,max_member_count,remark_name,group_id,user_id,nickname,card,sex,age,area,level,qq_level,join_time,last_sent_time,title_expire_time,unfriendly,card_changeable,is_robot,shut_up_timestamp,role,title
+696592464,稿什么,,1700827407,4,200,,696592464,641725590,Andy Ma,Andy Ma,unknown,0,,1,0,1700827408,1719923835,0,False,True,False,0,admin,小马
+696592464,稿什么,,1700827407,4,200,,696592464,178878631,瑞克-瑞文[Ⅵ],瑞克-瑞文[Ⅵ],unknown,0,,1,0,1700827407,1716538579,0,False,True,False,0,owner,文
+696592464,稿什么,,1700827407,4,200,,696592464,2594970658,伍**,伍**,unknown,0,,1,0,1700827408,1712406938,0,False,True,False,0,admin,坤坤
+696592464,稿什么,,1700827407,4,200,,696592464,1701931786,ZodAmn,ZodAmn,unknown,0,,1,0,1706084688,1706084688,0,False,True,False,0,member,

@@ -1,0 +1,3 @@
+group_id,group_name,group_memo,group_create_time,member_count,max_member_count,remark_name,group_id,user_id,nickname,card,sex,age,area,level,qq_level,join_time,last_sent_time,title_expire_time,unfriendly,card_changeable,is_robot,shut_up_timestamp,role,title
+640070954,瑞克科技-服务器中枢,,1710209073,2,200,,640070954,985101995,表白,表白,unknown,0,,1,0,1712194651,1712194708,0,False,True,False,0,admin,表大白
+640070954,瑞克科技-服务器中枢,,1710209073,2,200,,640070954,178878631,瑞克-瑞文[Ⅵ],瑞克-瑞文[Ⅵ],unknown,0,,1,0,1710209073,1720768899,0,False,True,False,0,owner,研究所所长

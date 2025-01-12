@@ -1,0 +1,3 @@
+group_id,group_name,group_memo,group_create_time,member_count,max_member_count,remark_name,group_id,user_id,nickname,card,sex,age,area,level,qq_level,join_time,last_sent_time,title_expire_time,unfriendly,card_changeable,is_robot,shut_up_timestamp,role,title
+913168235,瑞克科技-消息中转站,,1703326569,2,200,,913168235,3865383463,1248_TEST_USER,1248_TEST_USER,unknown,0,,1,0,1723237423,1735475501,0,False,True,False,0,admin,
+913168235,瑞克科技-消息中转站,,1703326569,2,200,,913168235,178878631,瑞克-瑞文[Ⅵ],瑞克-瑞文[Ⅵ],unknown,0,,1,0,1703326570,1736505107,0,False,True,False,0,owner,
