@@ -15,9 +15,9 @@ KEEP = [
     'time',
     'message_id',
 ]
-URL = 'http://localhost:3000/get_group_msg_history'
-GROUP_ID = 123456789
-SLEEP_SEC = 5
+URL = 'http://192.168.0.192:3000/get_group_msg_history'
+GROUP_ID = 576353195
+SLEEP_SEC = 0
 ATTEMPT_TIMES = 20
 MAX_MESSAGES_PER_FILE = 100
 

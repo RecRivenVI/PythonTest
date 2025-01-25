@@ -46,6 +46,6 @@ def extract_exif_data(input_dir, output_dir):
                     output_file.write('')
 
 if __name__ == "__main__":
-    input_dir = r"F:\PhotoSync\Pictures\Gallery"  # 替换为照片输入目录
-    output_dir = r"D:\exiftool_output\Pictures\Gallery"  # 替换为输出目录
+    input_dir = r"F:\PhotoClassification\整理#1"  # 替换为照片输入目录
+    output_dir = r"F:\PhotoClassification\整理#1"  # 替换为输出目录
     extract_exif_data(input_dir, output_dir)

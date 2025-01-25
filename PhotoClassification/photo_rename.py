@@ -95,5 +95,5 @@ def rename_images_in_directory(directory):
                     else:
                         print(f"No EXIF date found for {filename}")
 
-directory_path = r"F:\相册同步\DCIM\Camera"
+directory_path = r"F:\PhotoClassification\XXXXXXXX\0"
 rename_images_in_directory(directory_path)
