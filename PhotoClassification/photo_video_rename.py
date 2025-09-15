@@ -214,5 +214,5 @@ def rename_files_in_directory(directory):
                     print(f"No creation time found for video {filename}")
 
 # 指定文件的目录路径
-directory_path = r"F:\PhotoClassification\special_test\video"
+directory_path = r"F:\PhotoClassification\Me\X\dpi72"
 rename_files_in_directory(directory_path)
