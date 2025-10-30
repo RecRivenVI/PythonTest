@@ -1,0 +1,44 @@
+name: Pack and Release Shaders
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  pack-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Get last commit date of specific developer
+      id: get_commit_date
+      run: |
+        # 指定 GitHub 用户名
+        DEV_NAME="GeForceLegend"
+        # 获取该开发者最后一次 commit 的时间，格式 YYYY-MM-DD
+        LAST_DATE=$(git log -1 --author="$DEV_NAME" --pretty=format:%ad --date=format:'%Y-%m-%d')
+        echo "COMMIT_DATE=$LAST_DATE" >> $GITHUB_ENV
+        echo "Last commit date of $DEV_NAME: $LAST_DATE"
+
+    - name: Create zip file
+      run: |
+        ZIP_NAME="Sundial_Lite_Dev_Packup_${COMMIT_DATE}.zip"
+        zip -r "$ZIP_NAME" shaders
+        echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+
+    - name: Create or update release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ env.COMMIT_DATE }}
+        name: Sundial Lite Dev Packup ${{ env.COMMIT_DATE }}
+        files: ${{ env.ZIP_NAME }}
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
