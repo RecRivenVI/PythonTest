@@ -1,7 +1,7 @@
 import os
 import zipfile
 import struct
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 
 def parse_extended_timestamp(extra):
     """
@@ -30,12 +30,10 @@ def update_zip_timestamp(zip_path):
             # 先尝试解析扩展字段 mtime
             mtime = parse_extended_timestamp(info.extra)
             if mtime is not None:
-                # 转换为北京时间
-                dt = datetime.fromtimestamp(mtime, tz=timezone.utc).astimezone(
-                    timezone(timedelta(hours=8))
-                )
+                # 转换为系统本地时区
+                dt = datetime.fromtimestamp(mtime, tz=timezone.utc).astimezone()
             else:
-                # 回退到 DOS 时间
+                # 回退到 DOS 时间（已是本地时区）
                 dt = datetime(*info.date_time)
 
             times.append(dt)
@@ -46,7 +44,7 @@ def update_zip_timestamp(zip_path):
 
         # 找到最晚的修改时间
         latest_time = max(times)
-        print(f"{zip_path} 内最晚修改时间 (北京时间): {latest_time}")
+        print(f"{zip_path} 内最晚修改时间 (本地时区): {latest_time}")
 
         # 转换为时间戳（秒）
         ts = latest_time.timestamp()
