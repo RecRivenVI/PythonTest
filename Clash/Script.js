@@ -2,6 +2,7 @@
 const newRules = [
   //进程
   "PROCESS-NAME,prismlauncher.exe,🚀 节点选择",
+  "PROCESS-NAME,venera.exe,🚀 节点选择",
   //CYLINK
   "DOMAIN,2cy.io,🚀 节点选择",
   "DOMAIN,次元.net,🚀 节点选择",
