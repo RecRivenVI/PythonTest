@@ -4,8 +4,8 @@ const newRules = [
   "PROCESS-NAME,prismlauncher.exe,🚀 节点选择",
   "PROCESS-NAME,venera.exe,🚀 节点选择",
   //CYLINK
-  "DOMAIN,2cy.io,🚀 节点选择",
   "DOMAIN,次元.net,🚀 节点选择",
+  "DOMAIN,2cy.io,🚀 节点选择",
   //面板
   "DOMAIN,clash.razord.top,DIRECT",
   "DOMAIN,yacd.haishan.me,DIRECT",
