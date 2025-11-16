@@ -1,0 +1,2 @@
+file,chunk_x,chunk_z,x,y,z,world_x,world_y,world_z,block,block.id,block.properties,tile_entity
+C:\Users\RavenYin\Downloads\r.-1.0.mca,-9,1,15,11,5,-129,11,21,Block(create:creative_motor),creative_motor,{'facing': east},"{'Speed': '70.0', 'HasAttachedComputer': '0', 'keepPacked': '0', 'Network': ""{TAG_Float('Capacity'): 1146880.0, TAG_Int('Size'): 3, TAG_Float('AddedCapacity'): 16384.0, TAG_Long('Id'): -35459249909749, TAG_Float('Stress'): 0.0}"", 'x': '-129', 'ForgeCaps': '{}', 'y': '11', 'ScrollValue': '70', 'z': '21', 'id': 'create:motor'}"
