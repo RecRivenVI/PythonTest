@@ -27,6 +27,10 @@ def update_zip_timestamp(zip_path):
     with zipfile.ZipFile(zip_path, 'r') as zf:
         times = []
         for info in zf.infolist():
+            # 跳过目录条目
+            if info.is_dir():
+                continue
+
             # 先尝试解析扩展字段 mtime
             mtime = parse_extended_timestamp(info.extra)
             if mtime is not None:
@@ -39,7 +43,7 @@ def update_zip_timestamp(zip_path):
             times.append(dt)
 
         if not times:
-            print(f"{zip_path} 内没有文件，跳过。")
+            print(f"{zip_path} 内没有文件（或只有目录），跳过。")
             return
 
         # 找到最晚的修改时间
