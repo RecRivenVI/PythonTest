@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>UUP转ISO工具</title>
+    <style type="text/css">
+        #nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            overflow: auto;
+        }
+
+        main {
+            position: fixed;
+            top: 0;
+            left: 200px;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+        }
+
+        .innertube {
+            margin: 15px;
+        }
+
+        * html main {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="innertube">
+
+            <h2><a name="Overview"></a>概述</h2>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>自动化Windows命令脚本，用于处理Microsoft Windows 11/10统一更新平台(UUP)文件，允许将其构建/转换为可用状态(ISO / WIM)。</li>
+                <br />
+                <li>您可以通过从Windows 11/10构建版本升级到较新版本来获取UUP文件(从15063开始，即版本1703)。</li>
+                <br />
+                <li>您还可以通过以下项目之一获取UUP标准源：<br />
+                <a href="https://uupdump.net/">UUP dump网站</a><br />
+                <a href="https://uup.rg-adguard.net/">UUP生成项目</a></li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Using"></a>如何使用</h2>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>运行脚本需要管理员权限。</li>
+                <br />
+                <li>可选：临时禁用防病毒软件或保护程序，以免干扰处理过程。</li>
+                <br />
+                <li>确保文件不是只读或被阻止的。</li>
+                <br />
+                <li>将此包解压到简单的无空格路径文件夹中以避免问题(例如：C:\UUP)。</li>
+                <br />
+                <li>将文件放在"UUPs"文件夹中以便自动检测，或将uup文件目录拖放到convert-UUP.cmd上。或者，系统会提示您输入其他UUP文件夹路径。</li>
+                <br />
+                <li>如果检测到多个版本，系统会首先提示您选择一个版本、某些版本或创建AIO。</li>
+                <br />
+                <li>要退出提示或选项菜单，只需按"Enter"键。</li>
+                </li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Options"></a>输出选择</h2>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>
+                    <b>1 - 创建包含install.wim的ISO</b><br />
+                    <b>4 - 创建包含install.esd的ISO</b><br /><br />
+                    将UUP文件转换为包含install.wim或install.esd文件的常规ISO发行版。
+                </li>
+                <br />
+                <li>
+                    <b>2 - 创建install.wim</b><br />
+                    <b>5 - 创建install.esd</b><br /><br />
+                    仅创建install.wim/install.esd文件，可用于相同版本的其他ISO或使用dism、imagex、wimlib手动应用。
+                </li>
+                <br />
+                <li>
+                    <b>3 - UUP版本信息</b><br /><br />
+                    显示检测到的版本信息(架构、语言、构建版本、构建分支、版本名称)。
+                </li>
+                <br />
+                <li>
+                    <b>6 - 配置选项</b><br /><br />
+                    更改配置选项的状态。
+                </li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Manual"></a>配置选项</h2>
+                控制转换行为、输出和自动化。<br /><br />
+                您有三种方式更改这些选项的状态，其中0表示选项关闭(否)，1表示选项开启(是)：<br />
+                - 编辑<b>ConvertConfig.ini</b>下的[convert-UUP]和[Store_Apps]部分<br />
+                - 删除<b>ConvertConfig.ini</b>并直接编辑<b>convert-UUP.cmd</b>脚本<br />
+                - 使用菜单选择6(不包括所有选项)<br /><br />
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>
+                    <b>AutoStart</b><br /><br />
+                    直接启动转换过程而无需提示。<br /><br />
+                    这需要将UUP文件放在<b>UUPs</b>文件夹中，或从命令提示符启动convert-UUP.cmd并指定UUP源文件夹路径，或将UUP源文件夹拖放到convert-UUP.cmd上。<br /><br />
+                    将此选项设置为<strong>1</strong>以创建包含<b>install.wim</b>的ISO<br />
+                    将此选项设置为<strong>2</strong>以创建包含<b>install.esd</b>的ISO<br />
+                    将此选项设置为<strong>3</strong>以仅创建<b>install.wim</b><br />
+                    将此选项设置为<strong>4</strong>以仅创建<b>install.esd</b>
+                </li>
+                <br />
+                <li>
+                    <b>AddUpdates</b><br /><br />
+                    转换后使用检测到的更新更新ISO发行版或install.wim。<br /><br />
+                    将此选项设置为<strong>1</strong>以<b>集成更新</b>到wim文件中<br />
+                    将此选项设置为<strong>2</strong>以<b>外部添加更新</b>到ISO发行版<br /><br />
+                    查看<a href="#Update">添加更新选项</a>了解详情。
+                </li>
+                <br />
+                <li>
+                    <b>StartVirtual</b><br /><br />
+                    转换完成后直接启动create_virtual_editions.cmd。<br /><br />
+                    查看<a href="#Virtual">虚拟版本</a>了解详情。
+                </li>
+                <br />
+                <li>
+                    <b>wim2esd</b><br /><br />
+                    在最后将install.wim转换为install.esd。<br /><br />
+                    此选项旨在与<b>AddUpdates</b>选项一起使用。<br /><br />
+                    如果您选择了<b>install.esd</b>选项且<b>AddUpdates</b>开启，则此选项将自动启用。<br /><br />
+                    警告：创建install.esd将消耗大量CPU/RAM，并需要相当长的时间完成。
+                </li>
+                <br />
+                <li>
+                    <b>wim2swm</b><br /><br />
+                    将install.wim拆分为多个install.swm文件。<br /><br />
+                    如果install.wim大小低于4GB，此选项将自动禁用。<br /><br />
+                    如果wim2esd/wim2swm都开启，install.esd优先于拆分install.swm。
+                </li>
+                <br />
+                <li>
+                    <b>SkipISO</b><br /><br />
+                    如果您目前不希望创建ISO文件，或稍后想使用multi_arch_iso.cmd创建多架构ISO(x86/x64)，或打算手动使用create_virtual_editions.cmd
+                </li>
+                <br />
+                <li>
+                    <b>SkipWinRE</b><br /><br />
+                    不将winre.wim添加到install.wim/install.esd，如果您不希望有恢复环境或想要减少ISO大小/转换时间等。<br /><br />
+                    注意：将winre.wim添加到install<b>.esd</b>将消耗大量CPU/RAM。
+                </li>
+                <br />
+                <li>
+                    <b>LCUwinre</b><br /><br />
+                    即使检测到SafeOS更新，也强制使用累积更新更新winre.wim。<br /><br />
+                    对于构建版本26052及更高版本，此选项被忽略并自动禁用。
+                </li>
+                <br />
+                <li>
+                    <b>LCUmsuExpand</b><br /><br />
+                    展开累积更新并通过update.mum从松散文件安装，而不是直接添加msu文件。<br /><br />
+                    对于Windows 11构建版本26052及更高版本，此选项自动启用，将此选项设置为<strong>2</strong>以禁用。<br />
+                    此选项仅适用于Windows 11构建版本22621及更高版本。
+                </li>
+                <br />
+                <li>
+                    <b>DisableUpdatingUpgrade</b><br /><br />
+                    通过使用版本升级(Home>Pro / ServerStandard>ServerDatacenter)禁用更新过程优化，并对每个版本执行单独更新。<br /><br />
+                    对于Windows 11构建版本26000及更高版本，此选项自动启用，将此选项设置为<strong>2</strong>以恢复到关闭状态。
+                </li>
+                <br />
+                <li>
+                    <b>UpdtBootFiles</b><br /><br />
+                    使用累积更新中的新文件更新ISO引导文件bootmgr/memtest/efisys.bin。<br /><br />
+                    如果检测到，此选项还将更新新的UEFI CA 2023引导文件。查看<a href="https://support.microsoft.com/help/5053484" target="_blank">KB5053484</a>了解详情。<br /><br />
+                    注意：如果此选项关闭，默认的两个文件bootmgr.efi/bootmgfw.efi将被更新。
+                </li>
+                <br />
+                <li>
+                    <b>ForceDism</b><br /><br />
+                    使用dism.exe的官方方法创建boot.wim，这需要Windows 11/10主机操作系统或ADK。
+                </li>
+                <br />
+                <li>
+                    <b>RefESD</b><br /><br />
+                    保留转换后的参考ESD文件以供将来操作，而不是每次都转换它们。<br /><br />
+                    如果UUP源是Express，参考ESD和版本ESD将复制到新文件夹"CanonicalUUP"，实际上，这将转换/备份Express UUP源到Canonical。<br />
+                    如果UUP源是Canonical，参考ESD将复制到相同的UUP源文件夹，原始CAB文件将移动到子目录"Original"。
+                </li>
+                <br />
+                <li>
+                    <b>SkipLCUmsu</b><br /><br />
+                    跳过为构建版本21382到25330创建累积更新MSU(LCU将使用传统的cab+psf提取添加)。
+                </li>
+                <br />
+                <li>
+                    <b>SkipEdge</b><br /><br />
+                    跳过添加Microsoft Edge Chromium<br />
+                    设置选项为<strong>1</strong>：不为Windows 11构建版本26052及更高版本添加Edge.wim<br />
+                    设置选项为<strong>1</strong>：不为Windows 10集成Edge与累积更新<br />
+                    设置选项为<strong>2</strong>：通过替代解决方案跳过Windows 10的Edge与累积更新(可能不起作用)<br /><br />
+                    此选项仅在选项<b>AddUpdates=1</b>(集成)时工作。
+                </li>
+                <br />
+                <li>
+                    <b>AutoExit</b><br /><br />
+                    完成后退出转换过程(脚本)而无需提示。<br /><br />
+                    适用于批量转换，最好与<b>AutoStart</b>选项一起使用。
+                </li>
+                <br />
+                <li>
+                    <b>AddDrivers</b><br /><br />
+                    向install.wim和boot.wim / winre.wim添加驱动程序<br />
+                    这是基本功能支持，应仅与测试过的兼容驱动程序一起使用。<br /><br />
+                    * 如何使用：<br />
+                    - 启用选项<br />
+                    - 将要添加的驱动程序放在适当的子文件夹中：<br />
+                    <code>ALL: 驱动程序将添加到所有wim文件<br />
+                    OS: 驱动程序将仅添加到install.wim<br />
+                    WinPE: 驱动程序将仅添加到boot.wim / winre.wim</code><br /><br />
+                    * 可选，您可以使用选项<b>Drv_Source</b>指定不同的驱动程序源文件夹路径<br />
+                    该文件夹必须包含每个驱动程序目标的子文件夹，如上所述。<br /><br />
+                    * 该选项仅在集成更新或应用程序时工作。<br /><br />
+                    * 该选项不会检查或验证驱动程序，只是简单地指向DISM驱动程序文件夹。<br /><br />
+                    * 该选项适用于简单和引导关键驱动程序(芯片组、磁盘控制器、LAN/WiFi..)，以便更容易安装，而不是大型驱动程序或可能破坏设置的驱动程序。
+                </li>
+                <br />
+                <li>
+                    <b>#############################################################</b><br /><br />
+                    <b>以下选项仅适用于Windows 11构建版本22563及更高版本</b><br /><br />
+                </li>
+                <li>
+                    <b>SkipApps</b><br /><br />
+                    不添加商店应用程序。
+                </li>
+                <br />
+                <li>
+                    <b>AppsLevel</b><br /><br />
+                    控制客户端版本(除Team外)添加的应用程序。<br /><br />
+                    设置为<strong>0</strong>以添加所有引用的应用程序<br />
+                    设置为<strong>1</strong>以添加商店、安全健康、应用程序安装程序<br />
+                    设置为<strong>2</strong>以添加级别1应用程序+照片、相机、记事本、画图<br />
+                    设置为<strong>3</strong>以添加级别2应用程序+终端、小部件、邮件/Outlook、Clipchamp<br />
+                    设置为<strong>4</strong>以添加级别3应用程序+媒体应用程序(音乐、视频、编解码器、手机链接)/不适用于N版本
+                </li>
+                <br />
+                <li>
+                    <b>StubAppsFull</b><br /><br />
+                    控制可用作存根的应用程序偏好。<br /><br />
+                    设置为<strong>0</strong>以安装为存根应用程序<br />
+                    设置为<strong>1</strong>以安装为完整应用程序
+                </li>
+                <br />
+                <li>
+                    <b>CustomList</b><br /><br />
+                    启用使用CustomAppsList.txt或CustomAppsList2.txt来挑选和选择添加的应用程序。<br />
+                    如果启用，此选项优先于AppsLevel选项。<br /><br />
+                    如何使用：<br />
+                    您可以直接使用<b>CustomAppsList.txt</b>，或复制/重命名它为<b>CustomAppsList2.txt</b><br />
+                    编辑所选文件，并删除您希望添加的应用程序前面的<b>#</b>前缀，然后保存文件。
+                </li>
+                <br />
+                <li>
+                    <b>额外奖励(不是选项)</b><br /><br />
+                    脚本支持添加LanguageExperiencePack(LXP)与其他应用程序一起。<br /><br />
+                    如何操作：<br />
+                    从UUP dump或<a href="https://store.rg-adguard.net/" target="_blank">store.rg-adguard.net</a>下载所需的LanguageExperiencePack文件<br />
+                    在开始转换过程之前将文件放入<b>UUPs</b>文件夹(或替代的UUP文件源文件夹)。
+                </li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Update"></a>添加更新选项</h2>
+            <h3><a name="UpdateInfo"></a>信息</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>从Windows 10版本1709开始，服务堆栈更新和最新累积更新随UUP源一起处理和分发。此外还包括一些用于升级的小型动态更新。
+                </li>
+                <br />
+                <li>因此，UUP Dump将为相同Windows 11/10版本提供多个构建版本。每个版本代表刷新的功能更新或新的累积更新。
+                </li>
+                <br />
+                <li>然而，这些更新仅由Windows Update使用和应用，它们不是UUP源本身的实际部分，默认情况下不会包含在转换的ISO/WIM中。
+                </li>
+                <br />
+                <li><b>AddUpdates</b>选项提供内置能力直接集成这些更新，结果是刷新的ISO/WIM，或外部添加它们。
+                </li>
+                <br />
+                <li><u>集成</u>更新模式仅适用于install.wim(ISO或单一)，并需要<u>Windows 11/10主机操作系统或Windows 11/10 ADK</u>。
+                </li>
+                <br />
+                <li><u>外部</u>更新模式仅适用于<u>构建版本17763及更高版本</u>，更新将在设置期间安装(全新安装或升级)。
+                </li>
+                <br />
+                <li><b>Cleanup</b>选项控制集成模式的映像清理，并将增量压缩超载组件。
+                </li>
+                <br />
+                <li><b>ResetBase</b>选项仅与Cleanup选项一起工作，并将进一步移除超载组件。
+                </li>
+                <br />
+                <li><b>NetFx3</b>选项是在两种模式下启用.NET 3.5功能。<br />
+				注意：.NET 3.5不再作为功能包含在Windows 11构建版本27965及更高版本中。
+                </li>
+                <br />
+                <li><u>外部</u>更新模式是作为备份程序，以防未安装Windows 11/10 ADK，或用户希望更快地转换ISO。建议在可能的情况下使用正常集成模式。
+                </li>
+                <br />
+                <li>如果UUP源是构建版本17063或更高版本且选择了多个版本，为了减少集成模式时间，Pro/ProN版本将从已更新的Home/HomeN版本创建为升级，如果可能。
+                </li>
+                <br />
+                <li>同样，对于Windows Server 2022，Datacenter版本将从已更新的Standard版本创建为升级，如果可能。
+                </li>
+                <br />
+                <li><u>集成</u>更新模式可能无法在<u>Windows 7主机操作系统</u>上正常工作，特别是最近的Windows 11/10构建版本。<u>外部</u>更新模式建议在这种情况下使用。
+                </li>
+                <br />
+                <li><u>集成</u>ARM64 UUP映像的更新模式仅在<u>Windows 11/10/8.1主机操作系统</u>上工作。
+                </li>
+                <br />
+                <li><u>集成</u>Windows 11构建版本22567及更高版本的更新模式至少需要<u>Windows 10 v1607主机操作系统(构建版本14399)</u>。
+                </li>
+            </ul>
+            <br />
+            <h3><a name="UpdateHow"></a>如何操作</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>确保UUP源包含更新(Windows10.0-KB* / Windows11.0-KB*文件)</li>
+                <br />
+                <li>将配置选项<b>AddUpdates</b>设置为1或2</b></li>
+                <br />
+                <li>如果设置为1且未安装Windows 11/10 ADK，它将恢复为2(如果构建版本支持)，或关闭</li>
+            </ul>
+            <br />
+            <h3><a name="UpdateNote"></a>注意</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <u>警告：</u>在构建版本18362及更高版本上，由于微软的累积更新设计更改，<b>Cleanup</b>选项也将移除基础RTM版本包。<br />
+                这可能导致未来的累积更新安装失败。<br /><br />
+                尽管如此，系统本身可以在安装后启动清理过程，通过计划任务<b>StartComponentCleanup</b>或<b>SilentCleanup</b>，或通过磁盘清理。<br />
+                <br />
+                <u>警告：</u><b>ResetBase</b>选项会破坏"重置此PC"功能。完全ResetBase在构建版本18362及更高版本上自动禁用。
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Virtual"></a>虚拟版本</h2>
+            <h3><a name="VirtualInfo"></a>信息</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>从Windows 10构建版本17063开始，常规版本已统一为两个基础版本：Home &amp; Pro(及其变体Home N &amp; Pro N)<br /><br />
+                Home China版本仍然独立
+                </li>
+                <br />
+                <li>因此，UUP将仅提供上述版本的安装文件</li>
+                <br />
+                <li>以下版本现在作为"虚拟升级版本"与基础版本存在：<br /><br />
+                <code>Home -&gt; Home Single Language<br />
+                Pro -&gt; Enterprise, Education, Pro Education, Pro for Workstations, Cloud (构建版本21364+)，Enterprise multi-session, IoT Enterprise (构建版本18277+)，IoT Enterprise Subscription (构建版本25982+)<br />
+                Pro N -&gt; Enterprise N, Education N, Pro Education N, Pro N for Workstations, Cloud N (构建版本21364+)<br />
+                Enterprise LTSC -&gt; IoT Enterprise LTSC (构建版本19041+)，IoT Enterprise LTSC Subscription (构建版本25193+)</code>
+                </li>
+                <br />
+                <li>因此，额外的脚本是为了帮助从UUP源创建这些附加版本。
+                </li>
+            </ul>
+            <br />
+            <h3><a name="VirtualHow"></a>如何操作</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>支持的源发行版：<br />
+                - 放置在脚本旁边的文件夹(包含提取的ISO)。(自动检测)<br />
+                - DVD驱动器，即挂载的iso/真实dvd驱动器/usb驱动器。(自动检测)<br />
+                - 直接ISO文件。(您将被提示指定一个)</li>
+                <br />
+                <li>可选：如果您不打算保留基础转换的ISO，请将convert-UUP选项<b>SkipISO</b>设置为1。</li>
+                <br />
+                <li>使用convert-UUP.cmd创建源发行版。</li>
+                <br />
+                <li>运行create_virtual_editions.cmd并从选项中选择所需选项。</li>
+            </ul>
+            <br />
+            <h3><a name="VirtualOps"></a>选项</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>
+                    <b>1 - 创建所有版本</b><br />
+                    创建所有可能的目标虚拟版本。
+                </li>
+                <br />
+                <li>
+                    <b>2 - 创建一个版本</b><br />
+                    创建目标虚拟版本中的一个。
+                </li>
+                <br />
+                <li>
+                    <b>3 - 创建随机选择的版本</b><br />
+                    创建一些目标虚拟版本。
+                </li>
+            </ul>
+            <br />
+            <h3><a name="VirtualMan"></a>配置选项</h3>
+                控制进程行为、输出和自动化。<br /><br />
+                您有两种方式更改这些选项的状态，其中0表示选项关闭(否)，1表示选项开启(是)：<br />
+                - 编辑<b>ConvertConfig.ini</b>下的[create_virtual_editions]部分<br />
+                - 删除<b>ConvertConfig.ini</b>并直接编辑<b>create_virtual_editions.cmd</b>脚本<br /><br />
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>UseDism<br /><br />
+                选择创建方法：<br /><br />
+                值<strong>0</strong> : <b>注册表操作</b><br />
+                黑客方式，适用于install.wim或install.esd，支持任何主机操作系统(Vista+)。<br /><br />
+                值<strong>1</strong> : <b>Dism.exe工具</b><br />
+                官方方式，适用于install.wim，需要NT 10.0主机操作系统或Windows 8.1与Windows ADK。<br /><br />
+                值<strong>2</strong> : <b>强制Dism.exe工具</b><br />
+                与值1相同，但适用于Windows 7/8与Windows ADK。<br /><br />
+                如果选择值1或2且主机操作系统是NT 6.x且未安装Windows ADK，它将自动恢复为值0<br />
+                如果选择值1或2且源文件是install.esd，它将自动恢复为值0
+                </li>
+                <br />
+                <li>AutoStart<br /><br />
+                直接启动创建过程而无需提示。<br />
+                这需要源发行版就绪(文件夹或驱动器)。<br />
+                只有在<b>AutoEditions</b>中指定的版本将被创建，如果没有指定版本(为空)，它将创建所有可能的目标版本。
+                </li>
+                <br />
+                <li>AutoEditions<br /><br />
+                指定要与<b>AutoStart</b>选项一起自动创建的版本，用逗号,分隔版本<br />
+                将此选项留空以创建所有可能的目标版本。<br /><br />
+                <u>支持的版本值</u>:<br />
+                Enterprise, Education, ProfessionalEducation, ProfessionalWorkstation, CloudEdition, ServerRdsh, IoTEnterprise, IoTEnterpriseK<br />
+                EnterpriseN, EducationN, ProfessionalEducationN, ProfessionalWorkstationN, CloudEditionN<br />
+                CoreSingleLanguage<br />
+                IoTEnterpriseS, IoTEnterpriseSK<br /><br />
+                示例：<br />
+                <code>vAutoEditions=Enterprise<br />
+                vAutoEditions=Enterprise,ProfessionalWorkstation,Education<br />
+                vAutoEditions=</code>
+                </li>
+                <br />
+                <li>SortEditions<br /><br />
+                指定全部或任意版本按顺序排序，用逗号,分隔版本<br />
+                每当填充它时，该选项将被启用。将其留空以保持禁用状态<br /><br />
+                <u>注意</u>:<br />
+                这应包括源版本(如果需要)或install.wim/install.esd中已存在的任何版本<br />
+                通常，您可以指定任何正确的版本ID，如果在源install.wim/install.esd中检测到，它将被包含(排序)<br /><br />
+                <u>警告</u>:<br />
+                任何未在此选项中指定的版本将不会包含在最终install.wim/install.esd中<br />
+                确保指定所有所需版本。<br /><br />
+                示例：<br />
+                <code>- 启用：<br />
+                vSortEditions=CoreSingleLanguage,CoreCountrySpecific,Core,CoreN,Professional,ProfessionalN<br />
+                vSortEditions=Professional,ProfessionalWorkstation,Enterprise,ProfessionalN,ProfessionalWorkstationN,EnterpriseN<br />
+                vSortEditions=Enterprise EnterpriseN EnterpriseS EnterpriseSN IoTEnterpriseS IoTEnterpriseSK<br /><br />
+                - 保持禁用：<br />
+                vSortEditions=</code>
+                </li>
+                <br />
+                <li>DeleteSource<br /><br />
+                不保留源版本(例如：创建Enterprise并删除Pro)。
+                </li>
+                <br />
+                <li>Preserve<br /><br />
+                保留并保持源发行版文件夹完整，操作将在复制的文件夹上完成。<br />
+                如果源发行版是ISO文件，此选项无效。
+                </li>
+                <br />
+                <li>wim2esd<br /><br />
+                在最后将install.wim转换为install.esd。<br /><br />
+                警告：创建install.esd将消耗大量CPU/RAM，可能需要相当长的时间完成。
+                </li>
+                <br />
+                <li>SkipISO<br /><br />
+                最后不创建最终ISO文件。
+                </li>
+            </ul>
+                <br />
+                <b>注意：</b><br /><br />
+                如果create_virtual_editions.cmd是从convert-UUP.cmd启动的，选项<b>AutoStart</b> &amp; <b>wim2esd</b> &amp; <b>SkipISO</b>将从convert-UUP部分继承，无论它们在create_virtual_editions部分的当前状态如何<br /><br />
+                这意味着，如果convert-UUP的AutoStart=1，脚本将自动创建虚拟版本<br />
+                如果convert-UUP的wim2esd=1，install.wim将转换为install.esd，否则如果convert-UUP的wim2esd=0则跳过转换
+            <hr />
+            <br />
+
+            <h2><a name="Multi"></a>多架构ISO (x86/x64)</h2>
+            <h3><a name="MultiHow"></a>如何操作</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>可选：如果您不打算保留单架构ISO，请编辑convert-UUP.cmd并将<b>set SkipISO=1</b></li>
+                <br />
+                <li>使用convert-UUP.cmd创建两个ISO发行版，一个用于x64，另一个用于x86，您可以选择要在每个中包含的所需版本</li>
+                <br />
+                <li>运行multi_arch_iso.cmd并从菜单中选择所需选项</li>
+            </ul>
+            <br />
+            <h3><a name="MultiOps"></a>选项</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>
+                    <b>1 - 创建带有1个组合install.wim/install.esd的ISO</b><br />
+                    创建自定义ISO结构。<br />
+                    1个install.wim/install.esd用于所有x64/x86映像，以及略微修改的bootx64.wim/bootx86.wim以允许共存。
+                </li>
+                <br />
+                <li>
+                    <b>2 - 创建带有2个单独install.wim/install.esd的ISO (Win 10)</b><br />
+                    创建与媒体创建工具相同的ISO结构。<br />
+                    2个单独的x64/x86文件夹和每个架构的install.wim/install.esd。
+                </li>
+            </ul>
+            <br />
+            <h3><a name="MultiNote"></a>注意</h3>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>要保留源单架构发行版文件夹，请编辑multi_arch_iso.cmd并将<b>set Preserve=1</b></li>
+                <br />
+                <li>如果安装文件是install.esd，请注意选项1需要大量CPU/RAM来统一install.esd文件</li>
+                <br />
+                <li>multi_arch_iso.cmd也可以用于从任何类似的Windows x64/x86 ISO发行版创建多架构ISO，从Windows 7 SP1开始<br />
+                然而，选项2仅适用于Windows 11/10设置文件。<br />
+                </li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Debug"></a>调试模式</h2>
+                旨在帮助检测脚本或转换过程中的错误并创建操作的完整日志。<br /><br />
+                要启用调试模式，请执行以下步骤：<br /><br />
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>在ConvertConfig.ini中设置所需的配置选项(特别是AutoStart)。</li>
+                <br />
+                <li>编辑convert-UUP.cmd并将<b>set _Debug=0</b>更改为<b>set _Debug=1</b>并保存更改。</li>
+                <br />
+                <li>要启动进程：将UUP文件放在<b>UUPs</b>文件夹中，然后以管理员身份运行脚本。</li>
+                <br />
+                <li>启动进程的另一种方法：将UUP文件源目录拖放到convert-UUP.cmd上</li>
+                <br />
+                <li>等待进程完成且cmd窗口关闭。</li>
+            </ul>
+            <br />
+                注意：如果StartVirtual选项处于活动状态，create_virtual_editions.cmd将继承调试模式。<br />
+            <hr />
+            <br />
+
+            <h2><a name="Remarks"></a>额外说明</h2>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li>如果转换或更新过程失败并且您收到"访问被拒绝"错误，请以管理员身份运行<b>Remove_Failure_MountDir_TempDir.cmd</b>以移除临时挂载目录和提取残留。</li>
+                <br />
+                <li>如果升级是通过Express UUP(下载目录中的多个展开文件夹)完成的，您需要在启动升级过程之前执行UUP&gt;ISO操作(在第一次重启之前)。<br />
+                    为此，当WU提示您重启时，启动convert-UUP.cmd并粘贴下载目录的路径，例如：
+                <ul style="margin-top:0in;margin-bottom:0in">
+                    <li>C:\Windows\SoftwareDistribution\Download\07172dda91861218ecc095600216d792</li>
+                </ul>
+                <br />
+                或者，如果您在虚拟机中测试或有多引导系统，您可以选择在不升级的情况下关闭/重启系统。<br />
+                在桌面端，按Alt+F4并选择没有更新的选项
+                </li>
+            </ul>
+            <hr />
+            <br />
+
+            <h2><a name="Credits"></a>致谢</h2>
+            <ul style="margin-top:0in;margin-bottom:0in">
+                <li><a href="https://github.com/uup-dump">whatever127</a> - UUP dump</li>
+                <li><a href="https://wimlib.net">Eric Biggers</a> - wimlib</li>
+                <li><a href="https://www.7-zip.org">Igor Pavlov</a> - 7-zip</li>
+                <li><a href="https://forums.mydigitallife.net/members/superbubble.250156/">Melinda Bellemore</a> - SxSExpand</li>
+                <li><a href="https://github.com/Secant1006/PSFExtractor">BetaWorld</a> - PSFExtractor</li>
+                <li><a href="https://github.com/jeffkl/ManagedDism">Jeff Kluge</a> - Managed DismApi Wrapper</li>
+                <li><a href="http://reboot.pro/files/file/313-offlinereg">erwan.l</a> - offlinereg</li>
+                <li><a href="http://reboot.pro/topic/20471-windows-pe-5x-boot-problem">cdob</a> - 创建aio efisys.bin</li>
+                <li>特别感谢：@rgadguard, @Enthousiast, @Windows_Addict, @s1ave77, @Ratiborus58, @NecrosoftCore, @DiamondMonday, @WzorNET</li>
+                <li>cabarc, cdimage, imagex和bcdedit是Microsoft Corporation的知识产权。</li>
+            </ul>
+            <br />
+            作者: <a href="https://github.com/abbodi1406">abbodi1406</a>
+        </div>
+    </main>
+
+    <nav id="nav">
+        <div class="innertube">
+            <h2>索引</h2>
+            <a href="#Overview">概述</a><br />
+            <a href="#Using">如何使用</a><br />
+            <a href="#Options">输出选择</a><br /><br />
+            <a href="#Manual">配置选项</a><br /><br />
